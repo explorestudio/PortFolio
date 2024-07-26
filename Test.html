@@ -4,56 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .game-image {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .project-bg {
+            height: 300px;
+            position: relative;
+        }
+        .project-one-bg {
+            background: url('https://media.discordapp.net/attachments/898572152813527061/1067284713770852433/157.gif?ex=66a51218&is=66a3c098&hm=aed4a2ec27cb5f84bdd83f2752ede54edcbf386f3ee5bb040be129cab39dbd44&=') center center/cover no-repeat;
+        }
+        .project-panel {
+            height: 300px; /* Ensure consistent height */
+            position: relative;
+        }
+        .project-panel-content {
+            background-color: rgba(30, 58, 138, 0.7); /* Semi-transparent blue panel */
+            color: white;
+            padding: 10px;
+            border-radius: 0 0 8px 8px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            transition: height 0.3s ease, background-color 0.3s ease;
+            height: 50px;
+            overflow: hidden;
+        }
+        .project-panel-content:hover {
+            height: 50%;
+            background-color: rgba(30, 58, 138, 0.6);
+        }
+        .project-title {
+            margin-bottom: 0;
+        }
+        .project-description {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        .project-panel-content:hover .project-description {
+            opacity: 1;
+        }
+        .project-two-bg iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
-<body>
-    <nav>
-        <div>
-            <a href="#">My Portfolio</a>
-            <div>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-lg font-semibold">My Portfolio</a>
+                <div>
+                    <a href="#projects" class="px-4 py-2">Projects</a>
+                    <a href="#about" class="px-4 py-2">About</a>
+                    <a href="#favorite-games" class="px-4 py-2">Favorite Games</a>
+                    <a href="#contact" class="px-4 py-2">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
     
-    <section id="home">
-        <div>
-            <h1>Welcome to My Portfolio</h1>
-            <p>Showcasing my work and projects</p>
-            <a href="#about">Learn More</a>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md project-panel">
+                    <div class="project-bg project-one-bg"></div>
+                    <div class="project-panel-content">
+                        <h3 class="text-2xl font-bold mb-2 project-title">Project One</h3>
+                        <div class="project-description">
+                            <p class="text-lg leading-relaxed mb-4">This is a brief description of Project One. It showcases the main features and technologies used.</p>
+                            <a href="projects/clicker.html" target="_blank" class="text-teal-500 hover:text-teal-700">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-100 rounded-lg shadow-md project-panel">
+                    <div class="project-bg project-two-bg">
+                        <iframe src="https://www.youtube.com/embed/M7-Y4Lm8EAI?autoplay=1&mute=1&loop=1&playlist=M7-Y4Lm8EAI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-panel-content">
+                        <h3 class="text-2xl font-bold mb-2 project-title">Project Two</h3>
+                        <div class="project-description">
+                            <p class="text-lg leading-relaxed mb-4">This is a brief description of Project Two. It highlights the key functionalities and tools utilized.</p>
+                            <a href="https://link-to-project-two.com" target="_blank" class="text-teal-500 hover:text-teal-700">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-gray-100 rounded-lg shadow-md project-panel">
+                    <div class="project-bg project-three-bg"></div>
+                    <div class="project-panel-content">
+                        <h3 class="text-2xl font-bold mb-2 project-title">Project Three</h3>
+                        <div class="project-description">
+                            <p class="text-lg leading-relaxed mb-4">This is a brief description of Project Three. It includes a summary of the project's scope and outcomes.</p>
+                            <a href="https://link-to-project-three.com" target="_blank" class="text-teal-500 hover:text-teal-700">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+            <p class="text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <!-- Favorite Games Section -->
+    <section id="favorite-games" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Favorite Games</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Game 1: Undertale -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                    <img src="https://static.actugaming.net/media/2018/08/undertale-1-889x500.jpg" alt="Undertale" class="game-image rounded-md mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Undertale</h3>
+                </div>
+                <!-- Game 2: League of Legends -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                    <img src="https://i0.wp.com/onlyforgamer.com/wp-content/uploads/2018/02/512x51s-1.png?fit=512%2C512&ssl=1" alt="League of Legends" class="game-image rounded-md mb-4">
+                    <h3 class="text-2xl font-bold mb-2">League of Legends</h3>
+                </div>
+                <!-- Game 3: Minecraft -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                    <img src="https://e-enfance.org/wp-content/uploads/2021/06/mincraft.jpg" alt="Minecraft" class="game-image rounded-md mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Minecraft</h3>
+                </div>
+                <!-- Game 4: Outer Wilds -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202208/1623/Zofebh60Ue7Zt5sC10UAtU3D.png" alt="Outer Wilds" class="game-image rounded-md mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Outer Wilds</h3>
+                </div>
+                <!-- Game 5: Tunic -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                    <img src="https://cdn2.unrealengine.com/tunic-epic-shareimage-1920x1080-1920x1080-8bf937a9bd70.jpg" alt="Tunic" class="game-image rounded-md mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Tunic</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="#" method="POST">
-            <div>
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your Name">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Your Email">
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Your Message"></textarea>
-            </div>
-            <div>
-                <button type="submit">Send</button>
-            </div>
-        </form>
+  <embed src="https://my.machinations.io/d/loot--craft/6130a350ff1511ed915c02f943517e50" style="width:500px; height: 300px;">
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Contact</h2>
+            <form action="#" method="POST" class="w-full max-w-lg mx-auto">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3 mb-6">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                            Name
+                        </label>
+                        <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="w-full px-3 mb-6">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="Your Email">
+                    </div>
+                    <div class="w-full px-3 mb-6">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                            Message
+                        </label>
+                        <textarea class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="w-full px-3 mb-6">
+                        <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded" type="submit">
+                            Send
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
+
+    <!-- Include JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
+                
