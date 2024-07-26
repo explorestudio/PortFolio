@@ -8,7 +8,7 @@
     <style>
         .hero {
             background: url('path-to-your-hero-image.jpg') center center/cover no-repeat;
-            height: 100vh;
+            height: 60vh;
         }
         .section {
             padding: 60px 0;
@@ -46,11 +46,8 @@
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-lg font-semibold">My Portfolio</a>
             <nav class="space-x-4">
-                <a href="#home" class="px-4 py-2">Home</a>
                 <a href="#games" class="px-4 py-2">Games</a>
-                <a href="#design-docs" class="px-4 py-2">Design Docs</a>
-                <a href="#marketplace-assets" class="px-4 py-2">Marketplace Assets</a>
-                <a href="#contact" class="px-4 py-2">Contact</a>
+                <a href="#design-docs" class="px-4 py-2">Design Docs & Analysis</a>
             </nav>
         </div>
     </header>
@@ -75,7 +72,7 @@
                     <img src="https://via.placeholder.com/400x300" alt="Game One">
                     <h3 class="text-2xl font-bold mb-2">Game One</h3>
                     <p class="text-lg leading-relaxed mb-4">Description of Game One.</p>
-                    <a href="https://link-to-game-one.com" target="_blank" class="text-teal-500 hover:text-teal-700">View Game</a>
+                    <a href="portfolio-games.html" class="text-teal-500 hover:text-teal-700">View Game</a>
                 </div>
                 <!-- Add more games as needed -->
             </div>
@@ -83,5 +80,24 @@
     </section>
 
     <!-- Design Docs & Analysis Section -->
-    <section id="design-docs" 
+    <section id="design-docs" class="section bg-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="section-heading">
+                <h2>Design Docs & Analysis</h2>
+            </div>
+            <div class="grid-container">
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6">
+                    <img src="https://via.placeholder.com/400x300" alt="Design Doc One">
+                    <h3 class="text-2xl font-bold mb-2">Design Doc One</h3>
+                    <p class="text-lg leading-relaxed mb-4">Description of Design Doc One.</p>
+                    <a href="portfolio-documents.html" class="text-teal-500 hover:text-teal-700">View Doc</a>
+                </div>
+                <!-- Add more design docs as needed -->
+            </div>
+        </div>
+    </section>
 
+    <!-- Include JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
