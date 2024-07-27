@@ -1,27 +1,32 @@
 const projects = {
     'project-1': {
-        title: 'Project One',
-        description: 'This is a brief description of Project One. It showcases the main features and technologies used.',
-        featuredImage: 'https://www.youtube.com/watch?v=6s_a8YN04Qc',
+        title: 'The Infernity',
+        description: 'This is a brief description of Project One. It showcases the main features and technologies used. This is a brief description of Project One. It showcases the main features and technologies used.This is a brief description of Project One. It showcases the main features and technologies used.',
+        featuredImage: 'https://www.youtube.com/embed/6s_a8YN04Qc?autoplay=1&mute=1&controls=0&loop=1&playlist=6s_a8YN04Qc&modestbranding=1&showinfo=0&iv_load_policy=3&rel=0',
         iconImage: 'https://via.placeholder.com/100',
-        link: 'projects/clicker.html'
+        link: 'https://theinfernity.com/game'
     },
     'project-2': {
-        title: 'Project Two',
+        title: 'Heavy Metal - The Hunt',
         description: 'This is a brief description of Project Two. It highlights the key functionalities and tools utilized.',
-        featuredImage: 'https://www.youtube.com/embed/M7-Y4Lm8EAI?autoplay=1&mute=1&loop=1&playlist=M7-Y4Lm8EAI',
+        featuredImage: 'https://www.youtube.com/embed/M7-Y4Lm8EAI?autoplay=1&mute=1&loop=1&playlist=M7-Y4Lm8EAI&modestbranding=1&showinfo=0&iv_load_policy=3&rel=0',
         iconImage: 'https://via.placeholder.com/100',
-        link: 'https://link-to-project-two.com'
+        link: 'https://hv-mtl.com/'
     },
     'project-3': {
-        title: 'Project Three',
+        title: 'Time breachers',
         description: 'This is a brief description of Project Three. It includes a summary of the project\'s scope and outcomes.',
-        featuredImage: 'https://via.placeholder.com/600x400',
-        iconImage: 'https://via.placeholder.com/100',
-        link: 'https://link-to-project-three.com'
+        featuredImage: 'https://www.youtube.com/embed/jT_V_R_shHg?autoplay=1&mute=1&controls=0&loop=1&playlist=jT_V_R_shHg&modestbranding=1&showinfo=0&iv_load_policy=3&rel=0',
+        iconImage: 'https://pbs.twimg.com/profile_images/1589715753942540293/jrcOcqHT_400x400.jpg',
+        link: 'https://play.google.com/store/apps/details?id=com.StarChainGazer.TimeBreachers&hl=en_US'
     }
     // Add more projects as needed
 };
+
+
+
+let currentProjectIndex = 0;
+const projectKeys = Object.keys(projects);
 
 function showProject(projectId) {
     const project = projects[projectId];
@@ -37,24 +42,30 @@ function showProject(projectId) {
     const newMediaContainer = document.createElement('div');
     newMediaContainer.classList.add('featured-media');
 
-    if (projectId === 'project-1' || projectId === 'project-2') {
-        const iframe = document.createElement('iframe');
-        iframe.src = project.featuredImage;
-        iframe.frameBorder = 0;
-        iframe.allow = 'autoplay; encrypted-media';
-        iframe.allowFullscreen = true;
-        newMediaContainer.appendChild(iframe);
-    } else {
-        const img = document.createElement('img');
-        img.src = project.featuredImage;
-        img.alt = project.title;
-        newMediaContainer.appendChild(img);
-    }
+    const iframe = document.createElement('iframe');
+    iframe.src = project.featuredImage;
+    iframe.frameBorder = 0;
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    newMediaContainer.appendChild(iframe);
+
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    newMediaContainer.appendChild(overlay);
 
     featuredProject.insertBefore(newMediaContainer, document.querySelector('.featured-description'));
     document.getElementById('featured-link').href = project.link;
 }
 
-// Initial display of the first project
-showProject('project-1');
+function previousProject() {
+    currentProjectIndex = (currentProjectIndex > 0) ? currentProjectIndex - 1 : projectKeys.length - 1;
+    showProject(projectKeys[currentProjectIndex]);
+}
 
+function nextProject() {
+    currentProjectIndex = (currentProjectIndex < projectKeys.length - 1) ? currentProjectIndex + 1 : 0;
+    showProject(projectKeys[currentProjectIndex]);
+}
+
+// Initial display of the first project
+showProject(projectKeys[currentProjectIndex]);

@@ -8,47 +8,50 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-900">
-
     <!-- Header with Navigation -->
     <header class="bg-white shadow fixed w-full z-10 top-0">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-lg font-semibold">My Portfolio</a>
             <nav class="space-x-4">
-                <a href="#projects" class="px-4 py-2">Projects</a>
-                <a href="#design-docs" class="px-4 py-2">Design Docs & Analysis</a>
+                <a href="#projects" class="px-4 py-2 cursor-pointer">Projects</a>
+                <a href="#design-docs" class="px-4 py-2 cursor-pointer">Design Docs & Analysis</a>
             </nav>
         </div>
     </header>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white mt-24">
+    <section id="projects" class="py-20 bg-white mt-24 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-6">Projects</h2>
-            <div id="featured-project" class="featured-project">
-                <div class="featured-media">
-                    <img src="https://www.youtube.com/watch?v=6s_a8YN04Qc" alt="Featured Project" id="featured-image" style="width: 100%; height: auto; margin-right: 2rem;">
+            <div id="featured-project" class="featured-project flex flex-wrap lg:flex-nowrap">
+                <div class="featured-media w-full lg:w-2/5 relative">
+                    <iframe src="https://www.youtube.com/embed/6s_a8YN04Qc?autoplay=1&mute=1&controls=0&loop=1&playlist=6s_a8YN04Qc&modestbranding=1&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="overlay"></div>
                 </div>
-                <div class="featured-description">
-                    <h3 class="text-2xl font-bold mb-2" id="featured-title">Project One</h3>
-                    <p class="text-lg leading-relaxed mb-4" id="featured-description">This is a brief description of Project One. It showcases the main features and technologies used.</p>
+                <div class="featured-description w-full lg:w-3/5 lg:pl-12 mt-6 lg:mt-0">
+                    <h3 class="text-3xl font-bold mb-5" id="featured-title">Project One</h3>
+                    <p class="text-lg leading-relaxed mb-5" id="featured-description">This is a brief description of Project One. It showcases the main features and technologies used.</p>
                     <a href="projects/clicker.html" target="_blank" class="text-teal-500 hover:text-teal-700" id="featured-link">View Project</a>
                 </div>
             </div>
-            <div class="project-cards">
-                <div class="bg-gray-100 rounded-lg shadow-md project-card" onclick="showProject('project-1')">
-                    <img src="https://cdn.discordapp.com/attachments/898572152813527061/1067284713770852433/157.gif?ex=66a51218&is=66a3c098&hm=aed4a2ec27cb5f84bdd83f2752ede54edcbf386f3ee5bb040be129cab39dbd44&" alt="Project One Icon">
-                    <h3 class="text-sm font-bold mb-2">Project One</h3>
+            <div class="project-cards flex justify-center gap-4 mt-10">
+                <div class="bg-gray-100 rounded-lg shadow-md project-card transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer" onclick="showProject('project-1')">
+                    <img src="https://media.discordapp.net/attachments/898572152813527061/1067284713770852433/157.gif?ex=66a66398&is=66a51218&hm=01d07dd3102f04adb8fb0352f0da2fca95544c25a50504bfed8deccd4add6fcc&=" alt="Project One Icon" class="w-full h-24 object-cover">
                 </div>
-                <div class="bg-gray-100 rounded-lg shadow-md project-card" onclick="showProject('project-2')">
-                    <img src="https://via.placeholder.com/100" alt="Project Two Icon">
-                    <h3 class="text-sm font-bold mb-2">Project Two</h3>
+                <div class="bg-gray-100 rounded-lg shadow-md project-card transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer" onclick="showProject('project-2')">
+                    <img src="https://i.seadn.io/s/raw/files/8113474236c065a7308ccd0fe934fe2b.png?auto=format&dpr=1&w=3840" alt="Project Two Icon" class="w-full h-24 object-cover">
                 </div>
-                <div class="bg-gray-100 rounded-lg shadow-md project-card" onclick="showProject('project-3')">
-                    <img src="https://via.placeholder.com/100" alt="Project Three Icon">
-                    <h3 class="text-sm font-bold mb-2">Project Three</h3>
+                <div class="bg-gray-100 rounded-lg shadow-md project-card transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer" onclick="showProject('project-3')">
+                    <img src="https://pbs.twimg.com/profile_images/1589715753942540293/jrcOcqHT_400x400.jpg" alt="Project Three Icon" class="w-full h-24 object-cover">
                 </div>
                 <!-- Add more project cards as needed -->
             </div>
+        </div>
+        <!-- Chevron navigation -->
+        <div class="absolute top-1/2 left-4 transform -translate-y-1/2">
+            <button class="chevron" onclick="previousProject()">&#10094;</button>
+        </div>
+        <div class="absolute top-1/2 right-4 transform -translate-y-1/2">
+            <button class="chevron" onclick="nextProject()">&#10095;</button>
         </div>
     </section>
 
