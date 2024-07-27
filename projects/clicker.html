@@ -5,99 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <style>
-        .hero {
-            background: url('path-to-your-hero-image.jpg') center center/cover no-repeat;
-            height: 60vh;
-        }
-        .section {
-            padding: 60px 0;
-        }
-        .section-heading {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .section-heading h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-        .card {
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1rem;
-        }
-    </style>
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Header with Navigation -->
-    <header class="bg-white shadow fixed w-full z-10">
+    <header class="bg-white shadow fixed w-full z-10 top-0">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-lg font-semibold">My Portfolio</a>
             <nav class="space-x-4">
-                <a href="#games" class="px-4 py-2">Games</a>
+                <a href="#projects" class="px-4 py-2">Projects</a>
                 <a href="#design-docs" class="px-4 py-2">Design Docs & Analysis</a>
             </nav>
         </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero flex items-center justify-center text-white text-center">
-        <div>
-            <h1 class="text-5xl font-bold">Welcome to My Portfolio</h1>
-            <p class="mt-4 text-lg">Showcasing my work and projects</p>
-            <a href="#games" class="mt-6 px-4 py-2 bg-teal-500 text-white rounded">View My Work</a>
-        </div>
-    </section>
-
-    <!-- Games Section -->
-    <section id="games" class="section bg-white">
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white mt-24">
         <div class="container mx-auto px-6">
-            <div class="section-heading">
-                <h2>Games</h2>
-            </div>
-            <div class="grid-container">
-                <div class="card bg-gray-100 rounded-lg shadow-md p-6">
-                    <img src="https://via.placeholder.com/400x300" alt="Game One">
-                    <h3 class="text-2xl font-bold mb-2">Game One</h3>
-                    <p class="text-lg leading-relaxed mb-4">Description of Game One.</p>
-                    <a href="portfolio-games.html" class="text-teal-500 hover:text-teal-700">View Game</a>
+            <h2 class="text-3xl font-bold mb-6">Projects</h2>
+            <div id="featured-project" class="featured-project">
+                <div class="featured-media">
+                    <img src="https://www.youtube.com/watch?v=6s_a8YN04Qc" alt="Featured Project" id="featured-image" style="width: 100%; height: auto; margin-right: 2rem;">
                 </div>
-                <!-- Add more games as needed -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Design Docs & Analysis Section -->
-    <section id="design-docs" class="section bg-gray-200">
-        <div class="container mx-auto px-6">
-            <div class="section-heading">
-                <h2>Design Docs & Analysis</h2>
-            </div>
-            <div class="grid-container">
-                <div class="card bg-gray-100 rounded-lg shadow-md p-6">
-                    <img src="https://via.placeholder.com/400x300" alt="Design Doc One">
-                    <h3 class="text-2xl font-bold mb-2">Design Doc One</h3>
-                    <p class="text-lg leading-relaxed mb-4">Description of Design Doc One.</p>
-                    <a href="portfolio-documents.html" class="text-teal-500 hover:text-teal-700">View Doc</a>
+                <div class="featured-description">
+                    <h3 class="text-2xl font-bold mb-2" id="featured-title">Project One</h3>
+                    <p class="text-lg leading-relaxed mb-4" id="featured-description">This is a brief description of Project One. It showcases the main features and technologies used.</p>
+                    <a href="projects/clicker.html" target="_blank" class="text-teal-500 hover:text-teal-700" id="featured-link">View Project</a>
                 </div>
-                <!-- Add more design docs as needed -->
+            </div>
+            <div class="project-cards">
+                <div class="bg-gray-100 rounded-lg shadow-md project-card" onclick="showProject('project-1')">
+                    <img src="https://cdn.discordapp.com/attachments/898572152813527061/1067284713770852433/157.gif?ex=66a51218&is=66a3c098&hm=aed4a2ec27cb5f84bdd83f2752ede54edcbf386f3ee5bb040be129cab39dbd44&" alt="Project One Icon">
+                    <h3 class="text-sm font-bold mb-2">Project One</h3>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-md project-card" onclick="showProject('project-2')">
+                    <img src="https://via.placeholder.com/100" alt="Project Two Icon">
+                    <h3 class="text-sm font-bold mb-2">Project Two</h3>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-md project-card" onclick="showProject('project-3')">
+                    <img src="https://via.placeholder.com/100" alt="Project Three Icon">
+                    <h3 class="text-sm font-bold mb-2">Project Three</h3>
+                </div>
+                <!-- Add more project cards as needed -->
             </div>
         </div>
     </section>
 
     <!-- Include JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

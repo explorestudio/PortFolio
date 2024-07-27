@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    top: 0;
+}
+
+.featured-project {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem; /* Adjusted to reduce space between featured project and description */
+    align-items: center; /* Center content vertically */
+}
+
+.featured-project img, .featured-project iframe {
+    max-width: 100%;
+    width: 600px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    margin-right: 2rem;
+}
+
+.featured-description {
+    max-width: 30%;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-card {
+    flex: 0 1 100px;
+    max-width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
