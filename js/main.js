@@ -67,3 +67,67 @@ function nextProject() {
 
 // Initial display of the first project
 showProject(projectKeys[currentProjectIndex]);
+
+const schemes = {
+    'scheme-1': {
+        title: 'Scheme 1',
+        description: 'An illustration of the in-game economy for Project One, showcasing the flow of resources, currency, and player interactions.',
+        featuredImage: 'https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50',
+    },
+    'scheme-2': {
+        title: 'Scheme 2',
+        description: 'A detailed economic model for Project Two, depicting the monetization strategies and player spending behaviors.',
+        featuredImage: 'https://example.com/scheme-2',
+    },
+    'scheme-3': {
+        title: 'Scheme 3',
+        description: 'A comprehensive economic plan for Project Three, highlighting the revenue streams and cost structures.',
+        featuredImage: 'https://example.com/scheme-3',
+    }
+    // Add more schemes as needed
+};
+
+let currentSchemeIndex = 0;
+const schemeKeys = Object.keys(schemes);
+
+function showScheme(schemeId) {
+    const scheme = schemes[schemeId];
+    document.getElementById('featured-title').innerText = scheme.title;
+    document.getElementById('featured-description').innerText = scheme.description;
+
+    const featuredScheme = document.getElementById('featured-scheme');
+    const existingMediaContainer = featuredScheme.querySelector('.featured-media');
+    if (existingMediaContainer) {
+        existingMediaContainer.remove();
+    }
+
+    const newMediaContainer = document.createElement('div');
+    newMediaContainer.classList.add('featured-media');
+
+    const iframe = document.createElement('iframe');
+    iframe.src = scheme.featuredImage;
+    iframe.frameBorder = 0;
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    newMediaContainer.appendChild(iframe);
+
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    newMediaContainer.appendChild(overlay);
+
+    featuredScheme.insertBefore(newMediaContainer, document.querySelector('.featured-description'));
+}
+
+// Initial display of the first scheme
+showScheme(schemeKeys[currentSchemeIndex]);
+
+function previousScheme() {
+    currentSchemeIndex = (currentSchemeIndex > 0) ? currentSchemeIndex - 1 : schemeKeys.length - 1;
+    showScheme(schemeKeys[currentSchemeIndex]);
+}
+
+function nextScheme() {
+    currentSchemeIndex = (currentSchemeIndex < schemeKeys.length - 1) ? currentSchemeIndex + 1 : 0;
+    showScheme(schemeKeys[currentSchemeIndex]);
+}
+
