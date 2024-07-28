@@ -72,7 +72,7 @@ const schemes = {
     'scheme-1': {
         title: 'Scheme 1',
         description: 'An illustration of the in-game economy for Project One, showcasing the flow of resources, currency, and player interactions.',
-        featuredImage: 'https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50',
+        featuredImage: 'https://my.machinations.io/d/loot--craft/6130a350ff1511ed915c02f943517e50',
     },
     'scheme-2': {
         title: 'Scheme 2',
@@ -126,4 +126,16 @@ function nextScheme() {
     currentSchemeIndex = (currentSchemeIndex < schemeKeys.length - 1) ? currentSchemeIndex + 1 : 0;
     showScheme(schemeKeys[currentSchemeIndex]);
 }
+
+// Event listeners for chevrons
+document.querySelector('.chevron-left').addEventListener('click', previousScheme);
+document.querySelector('.chevron-right').addEventListener('click', nextScheme);
+
+// Event listeners for project cards
+document.querySelectorAll('.project-card').forEach((card, index) => {
+    card.addEventListener('click', () => {
+        showScheme(schemeKeys[index]);
+        currentSchemeIndex = index;  // Update the current index
+    });
+});
 
