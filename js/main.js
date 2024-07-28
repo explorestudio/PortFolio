@@ -139,3 +139,10 @@ document.querySelectorAll('.project-card').forEach((card, index) => {
     });
 });
 
+// Animation du titrede la section games
+
+document.addEventListener('DOMContentLoaded', function() {
+    const workTitle = document.getElementById('work-title');
+    workTitle.setAttribute('data-text', workTitle.textContent);
+});
+

@@ -9,6 +9,47 @@ header {
     top: 0;
 }
 
+/* Background bleu foncé pour la section games */
+.bg-dark-blue {
+    background-color: #001f3f;
+    padding: 50px 0; /* Augmentez la taille de la section */
+}
+
+/* Ajustez la couleur du texte pour la section games */
+#games .text-white {
+    color: white;
+}
+
+/* Style pour le titre Work avec animation */
+#work-title {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    25% { width: 1ch; }
+    50% { width: 2ch; }
+    75% { width: 3ch; }
+    100% { width: 4ch; }
+}
+
+#work-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    animation: typing 2s steps(4) infinite;
+    white-space: nowrap;
+}
+
+
 /* Transition pour les éléments de navigation */
 .nav-item {
     transition: transform 0.3s;
@@ -215,7 +256,7 @@ header {
 /* Mise en forme des images dans les jeux favoris */
 #favorite-games .game-image {
     width: 100%;
-    height: 200px; /* Fixe une hauteur pour toutes les images */
+    height: 100%; /* Pour que l'image couvre toute la zone */
     object-fit: cover;
 }
 
