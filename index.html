@@ -12,11 +12,11 @@
     <nav class="bg-white shadow fixed w-full z-10 top-0">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-lg font-semibold">My Portfolio</a>
+                <a href="index.html" class="text-lg font-semibold">Home</a>
                 <div>
-                    <a href="#projects" class="nav-item px-4 py-2 cursor-pointer">Projects</a>
-                    <a href="#about" class="nav-item px-4 py-2 cursor-pointer">About</a>
-                    <a href="#favorite-games" class="nav-item px-4 py-2 cursor-pointer">Favorite Games</a>
+                    <a href="projects/games.html" class="nav-item px-4 py-2 cursor-pointer">Projects & games</a>
+                    <a href="designdoc.html" class="px-4 py-2 cursor-pointer">Design Docs & Analysis</a>
+                    <a href="#aboutme" class="nav-item px-4 py-2 cursor-pointer">About me</a>
                     <a href="#contact" class="nav-item px-4 py-2 cursor-pointer">Contact</a>
                 </div>
             </div>
@@ -32,30 +32,30 @@
     </section>
 
     <!-- Main Section -->
-<section id="games" class="bg-dark-blue text-white mt-10">
-    <div class="container mx-auto px-6">
-        <div class="flex justify-center space-x-6">
-            <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games" onclick="location.href='projects/clicker.html'">
-                <img src="https://media.gqmagazine.fr/photos/646b7d71a35e700534ed9802/16:9/w_2560%2Cc_limit/100-best-games-hp-b.jpg" alt="Games">
-                <div class="card-content">
-                    <h3 class="text-3xl font-bold mb-2">Projects & Games</h3>
-                    <p class="text-lg leading-relaxed mb-4">Check the games and projects I've worked on</p>
+    <section id="games" class="bg-dark-blue text-white mt-10">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-6">
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games" onclick="location.href='projects/games.html'">
+                    <img src="https://media.gqmagazine.fr/photos/646b7d71a35e700534ed9802/16:9/w_2560%2Cc_limit/100-best-games-hp-b.jpg" alt="Games">
+                    <div class="card-content">
+                        <h3 class="text-3xl font-bold mb-2">Projects & Games</h3>
+                        <p class="text-lg leading-relaxed mb-4">Check the games and projects I've worked on</p>
+                    </div>
+                </div>
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer design-docs" onclick="location.href='designdoc.html'">
+                    <img src="https://stability-images-upload.s3.amazonaws.com/v1_txt2img_08ea59dd-48fa-4f5d-85ba-e71ad50a03ba.png" alt="Design Docs Analysis">
+                    <div class="card-content">
+                        <h3 class="text-3xl font-bold mb-2">Design & Economic Docs</h3>
+                        <p class="text-lg leading-relaxed mb-4">Read my design documents and see my work on game economy</p>
+                    </div>
                 </div>
             </div>
-            <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer design-docs" onclick="location.href='designdoc.html'">
-                <img src="https://stability-images-upload.s3.amazonaws.com/v1_txt2img_08ea59dd-48fa-4f5d-85ba-e71ad50a03ba.png" alt="Design Docs Analysis">
-                <div class="card-content">
-                    <h3 class="text-3xl font-bold mb-2">Design & Economic Docs</h3>
-                    <p class="text-lg leading-relaxed mb-4">Read my design documents and see my work on game economy</p>
-                </div>
+            <div class="section-heading text-center mt-10">
+                <div id="work-title"></div>
+                <div id="work-title">SELECT A CATEGORY</div>
             </div>
         </div>
-        <div class="section-heading text-center mt-10">
-            <div id="work-title"></div>
-            <div id="work-title">SELECT A CATEGORY</div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Favorite Games Section -->
     <section id="favorite-games" class="py-20 bg-gray-200">
@@ -85,8 +85,6 @@
             </div>
         </div>
     </section>
-
-    <embed src="https://my.machinations.io/d/loot--craft/6130a350ff1511ed915c02f943517e50" style="width:500px; height: 300px;">
     
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-200">
