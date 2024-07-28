@@ -9,7 +9,7 @@ const projects = {
     'project-2': {
         title: 'Heavy Metal - The Hunt',
         description: 'This is a brief description of Project Two. It highlights the key functionalities and tools utilized.',
-        featuredImage: 'https://www.youtube.com/embed/M7-Y4Lm8EAI?autoplay=1&mute=1&loop=1&playlist=M7-Y4Lm8EAI&modestbranding=1&showinfo=0&iv_load_policy=3&rel=0',
+        featuredImage: 'https://www.youtube.com/embed/M7-Y4Lm8EAI?autoplay=1&mute=1&loop=1&controls=0&playlist=M7-Y4Lm8EAI&modestbranding=1&showinfo=0&iv_load_policy=3&rel=0',
         iconImage: 'https://via.placeholder.com/100',
         link: 'https://hv-mtl.com/'
     },
@@ -22,8 +22,6 @@ const projects = {
     }
     // Add more projects as needed
 };
-
-
 
 let currentProjectIndex = 0;
 const projectKeys = Object.keys(projects);

@@ -1,13 +1,115 @@
-/* style.css */
+/* Reset margin et définition de la police de base */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Fixe le header en haut de la page */
 header {
     top: 0;
 }
 
+/* Transition pour les éléments de navigation */
+.nav-item {
+    transition: transform 0.3s;
+}
+
+/* Agrandissement des éléments de navigation au survol */
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+/* Mise en forme des images de jeux */
+.game-image {
+    width: 100%;
+    height: 200px; /* Fixe une hauteur pour toutes les images */
+    object-fit: cover; /* Assure que l'image couvre toute la zone */
+}
+
+/* Mise en forme des cartes */
+.card {
+    width: 45%;
+    height: 300px; /* Ajuste la hauteur pour rendre les images proportionnées */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: transparent; /* Elimine la couleur de fond des cartes */
+}
+
+/* Effet de zoom et d'ombre au survol des cartes */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mise en forme des images dans les cartes */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la zone */
+}
+
+/* Contenu des cartes */
+.card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: white;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    transform: translateY(10%);
+    opacity: 0.8; /* Opacité modérée */
+    width: calc(100% - 20px); /* Pour éviter que le strip dépasse de la carte */
+}
+
+/* Titre des cartes */
+.card h3 {
+    margin: 0;
+}
+
+/* Masquer la description par défaut */
+.card p {
+    display: none;
+}
+
+/* Afficher la description au survol */
+.card:hover p {
+    display: block;
+}
+
+/* Animation du contenu des cartes au survol */
+.card:hover .card-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Couleur pour les titres uniquement */
+.card .card-title-only {
+    background: #007bff; /* Couleur pour Games */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Couleur pour le contenu des cartes */
+.card-content {
+    background: #28a745; /* Couleur pour Design Docs Analysis */
+}
+
+/* Masquer les titres uniquement au survol */
+.card:hover .card-title-only {
+    display: none;
+}
+
+/* Espacement entre le titre et la description */
+.card-content p {
+    margin-top: 10px;
+}
+
+/* Mise en forme du projet en vedette */
 .featured-project {
     display: flex;
     flex-direction: row;
@@ -16,14 +118,16 @@ header {
     justify-content: center;
 }
 
+/* Conteneur pour les médias en vedette */
 .featured-media {
     position: relative;
-    padding-bottom: 28%; /* Adjusted aspect ratio */
+    padding-bottom: 28%; /* Ratio d'aspect ajusté */
     height: 0;
     width: 50%;
     margin-right: 2rem;
 }
 
+/* Mise en forme des iframes */
 .featured-media iframe {
     position: absolute;
     top: 0;
@@ -34,6 +138,7 @@ header {
     object-fit: cover;
 }
 
+/* Superposition transparente */
 .overlay {
     position: absolute;
     top: 0;
@@ -44,12 +149,14 @@ header {
     z-index: 1;
 }
 
+/* Description du projet en vedette */
 .featured-description {
     width: 40%;
     margin-top: 0;
     padding-left: 12px;
 }
 
+/* Conteneur des cartes de projet */
 .project-cards {
     display: flex;
     flex-direction: row;
@@ -57,6 +164,7 @@ header {
     justify-content: center;
 }
 
+/* Mise en forme des cartes de projet */
 .project-card {
     width: 100px;
     height: 100px;
@@ -64,6 +172,7 @@ header {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Mise en forme des images dans les cartes de projet */
 .project-card img {
     width: 100%;
     height: 100%;
@@ -71,11 +180,13 @@ header {
     border-radius: 0.5rem;
 }
 
+/* Effet de zoom et d'ombre au survol des cartes de projet */
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Mise en forme des chevrons de navigation */
 .chevron {
     background: none;
     border: none;
@@ -85,11 +196,48 @@ header {
     transition: color 0.3s;
 }
 
+/* Changement de couleur au survol des chevrons */
 .chevron:hover {
     color: #666;
 }
 
+/* Ajoute un curseur pointer */
 .cursor-pointer {
     cursor: pointer;
 }
 
+/* Mise en forme des titres et espacement */
+#favorite-games h2 {
+    font-size: 2rem; /* Ajuster la taille du titre */
+    margin-bottom: 2rem; /* Ajouter une marge en bas */
+}
+
+/* Mise en forme des images dans les jeux favoris */
+#favorite-games .game-image {
+    width: 100%;
+    height: 200px; /* Fixe une hauteur pour toutes les images */
+    object-fit: cover;
+}
+
+/* Mise en forme du conteneur des jeux favoris */
+#favorite-games .bg-gray-100 {
+    padding: 1rem; /* Ajuster le padding pour rendre les images et le texte uniformes */
+}
+
+/* Ajoute une marge entre les sections pour éviter le chevauchement */
+.section {
+    margin-bottom: 100px; /* Ajuster cette valeur pour donner plus d'espace */
+}
+
+/* Marge et largeur de la section games */
+#games {
+    margin-bottom: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}

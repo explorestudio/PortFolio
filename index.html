@@ -9,15 +9,15 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
     <!-- Navigation -->
-    <nav class="bg-white shadow">
+    <nav class="bg-white shadow fixed w-full z-10 top-0">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="#" class="text-lg font-semibold">My Portfolio</a>
                 <div>
-                    <a href="#projects" class="px-4 py-2 cursor-pointer">Projects</a>
-                    <a href="#about" class="px-4 py-2 cursor-pointer">About</a>
-                    <a href="#favorite-games" class="px-4 py-2 cursor-pointer">Favorite Games</a>
-                    <a href="#contact" class="px-4 py-2 cursor-pointer">Contact</a>
+                    <a href="#projects" class="nav-item px-4 py-2 cursor-pointer">Projects</a>
+                    <a href="#about" class="nav-item px-4 py-2 cursor-pointer">About</a>
+                    <a href="#favorite-games" class="nav-item px-4 py-2 cursor-pointer">Favorite Games</a>
+                    <a href="#contact" class="nav-item px-4 py-2 cursor-pointer">Contact</a>
                 </div>
             </div>
         </div>
@@ -39,14 +39,18 @@
             </div>
             <div class="flex justify-center space-x-6">
                 <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer" onclick="location.href='projects/clicker.html'">
-                    <img src="https://via.placeholder.com/400x300" alt="Games">
-                    <h3 class="text-2xl font-bold mb-2">Games</h3>
-                    <p class="text-lg leading-relaxed mb-4">Description of Game One.</p>
+                    <img src="https://media.gqmagazine.fr/photos/646b7d71a35e700534ed9802/16:9/w_2560%2Cc_limit/100-best-games-hp-b.jpg" alt="Games">
+                    <div class="card-content">
+                        <h3 class="text-2xl font-bold mb-2">Games</h3>
+                        <p class="text-lg leading-relaxed mb-4">Description of Game One.</p>
+                    </div>
                 </div>
                 <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer" onclick="location.href='projects/clicker.html'">
-                    <img src="https://via.placeholder.com/400x300" alt="Design Docs Analysis">
-                    <h3 class="text-2xl font-bold mb-2">Design Docs Analysis</h3>
-                    <p class="text-lg leading-relaxed mb-4">Description of Design Doc One.</p>
+                    <img src="https://stability-images-upload.s3.amazonaws.com/v1_txt2img_08ea59dd-48fa-4f5d-85ba-e71ad50a03ba.png" alt="Design Docs Analysis">
+                    <div class="card-content">
+                        <h3 class="text-2xl font-bold mb-2">Design Docs Analysis</h3>
+                        <p class="text-lg leading-relaxed mb-4">Description of Design Doc One.</p>
+                    </div>
                 </div>
             </div>
         </div>
