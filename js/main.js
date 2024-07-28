@@ -111,10 +111,6 @@ function showScheme(schemeId) {
     iframe.allowFullscreen = true;
     newMediaContainer.appendChild(iframe);
 
-    const overlay = document.createElement('div');
-    overlay.classList.add('overlay');
-    newMediaContainer.appendChild(overlay);
-
     featuredScheme.insertBefore(newMediaContainer, document.querySelector('.featured-description'));
 }
 
