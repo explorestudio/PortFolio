@@ -22,33 +22,34 @@ header {
 
 /* Style pour le titre Work avec animation */
 #work-title {
-    position: relative;
-    display: inline-block;
+    font-size: 1.4rem; /* Réduisez la taille de la police */
     overflow: hidden;
     white-space: nowrap;
-    vertical-align: bottom;
+    margin: 0 auto;
+    letter-spacing: .05em; /* Diminuez l'espacement des lettres */
+    color: white;
+    border-right: .15em solid orange;
+    width: 20.5ch; /* Ajustez cette valeur pour correspondre à la longueur du texte */
+    animation: typing 5s steps(16, end) infinite, blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-    0% { width: 0; }
-    25% { width: 1ch; }
-    50% { width: 2ch; }
-    75% { width: 3ch; }
-    100% { width: 4ch; }
+    0%, 30% {
+        width: 0;
+    }
+    30% {
+        width: 20.5ch; /* Ajustez cette valeur pour correspondre à la longueur du texte */
+    }
 }
 
-#work-title::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: inherit;
-    animation: typing 2s steps(4) infinite;
-    white-space: nowrap;
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    30% {
+        border-color: white;
+    }
 }
-
 
 /* Transition pour les éléments de navigation */
 .nav-item {
@@ -69,13 +70,12 @@ header {
 
 /* Mise en forme des cartes */
 .card {
-    width: 45%;
-    height: 300px; /* Ajuste la hauteur pour rendre les images proportionnées */
-    overflow: hidden;
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    background: transparent; /* Elimine la couleur de fond des cartes */
+    overflow: hidden;
+    width: 100%;
+    max-width: 45%; /* Ajustez cette valeur en fonction de la taille souhaitée */
+    margin: 0 2.5%; /* Centrer la carte */
+    padding: 0;
 }
 
 /* Effet de zoom et d'ombre au survol des cartes */
@@ -88,10 +88,10 @@ header {
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Assure que l'image couvre toute la zone */
+    object-fit: cover; 
 }
 
-/* Contenu des cartes */
+/* Redimensionner et styliser les dépliants */
 .card .card-content {
     position: absolute;
     bottom: 0;
@@ -101,10 +101,22 @@ header {
     color: white;
     padding: 10px;
     transition: transform 0.3s ease;
-    transform: translateY(10%);
-    opacity: 0.8; /* Opacité modérée */
-    width: calc(100% - 20px); /* Pour éviter que le strip dépasse de la carte */
+    transform: translateY(20%); /* Relevez les dépliants lorsqu'ils sont pliés */
+    opacity: 0.85; /* Opacité modérée */
+    width: 100%; /* Assure que le dépliant couvre toute la largeur de l'image */
+    height: 25%; /* Hauteur initiale des dépliants */
 }
+
+/* Couleur pour le titre Games */
+.card.games .card-content {
+    background: rgba(199, 104, 10, 0.8);
+}
+
+/* Couleur pour le titre Design Docs Analysis */
+.card.design-docs .card-content {
+    background: rgba(8, 207, 131, 0.8);
+}
+
 
 /* Titre des cartes */
 .card h3 {
@@ -124,7 +136,7 @@ header {
 /* Animation du contenu des cartes au survol */
 .card:hover .card-content {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 0.85;
 }
 
 /* Couleur pour les titres uniquement */
@@ -272,10 +284,7 @@ header {
 
 /* Marge et largeur de la section games */
 #games {
-    margin-bottom: 100px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 100px 0;    
 }
 
 /* style.css */

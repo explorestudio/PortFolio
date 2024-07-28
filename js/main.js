@@ -139,10 +139,38 @@ document.querySelectorAll('.project-card').forEach((card, index) => {
     });
 });
 
-// Animation du titrede la section games
+// Animation du titre de la section games (à revoir)
 
 document.addEventListener('DOMContentLoaded', function() {
     const workTitle = document.getElementById('work-title');
-    workTitle.setAttribute('data-text', workTitle.textContent);
+    const text = "SELECT A CATEGORY";
+    let index = 0;
+
+    function typeText() {
+        if (index <= text.length) {
+            workTitle.textContent = text.slice(0, index);
+            index++;
+            setTimeout(typeText, 200); // Ajustez la vitesse de l'animation ici
+        } else {
+            setTimeout(() => {
+                index = 0; // Réinitialise l'index
+                workTitle.textContent = "";
+                setTimeout(typeText, 200); // Relance l'animation après un court délai
+            }, 5000); // Temps d'arrêt de 5 secondes après l'affichage complet du texte
+        }
+    }
+
+    setTimeout(typeText, 1000); // Démarrer l'animation après un court délai
 });
+
+
+
+
+
+
+
+
+
+
+
 
