@@ -71,36 +71,34 @@ header {
     color: white;
 }
 
-/* Style pour le titre Work avec animation */
-#work-title {
-    font-size: 1.4rem; /* Réduisez la taille de la police */
+/* Style for the portfolio text with animation */
+#portfolio-text {
+    font-size: 3rem;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: .05em; /* Diminuez l'espacement des lettres */
-    color: white;
+    letter-spacing: .05em;
     border-right: .15em solid orange;
-    width: 20.5ch; /* Ajustez cette valeur pour correspondre à la longueur du texte */
-    animation: typing 5s steps(16, end) infinite, blink-caret 0.75s step-end infinite;
+    width: 15ch;
+    animation: typing-text 1s steps(24, end) 1s 1, pause 5s 2s 1, blink-caret-text 0.75s step-end 0s infinite;
+    margin-top: 3rem; /* Add spacing between cards and animated text */
 }
 
-@keyframes typing {
-    0%, 30% {
-        width: 0;
-    }
-    30% {
-        width: 20.5ch; /* Ajustez cette valeur pour correspondre à la longueur du texte */
-    }
+@keyframes typing-text {
+    from { width: 0; }
+    to { width: 15ch; /* Adjust this value to match the text length */ }
 }
 
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    30% {
-        border-color: white;
-    }
+@keyframes pause {
+    from { opacity: 1; }
+    to { opacity: 1; }
 }
+
+@keyframes blink-caret-text {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
 
 /* Transition pour les éléments de navigation */
 .nav-item {
@@ -150,7 +148,7 @@ header {
     right: 0;
     background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
     color: white;
-    padding: 10px;
+    padding: 5px;
     transition: transform 0.3s ease;
     transform: translateY(20%); /* Relevez les dépliants lorsqu'ils sont pliés */
     opacity: 0.85; /* Opacité modérée */

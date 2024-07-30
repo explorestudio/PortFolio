@@ -13,15 +13,22 @@
     <!-- Navigation -->
     <nav class="bg-black shadow fixed w-full z-10 top-0">
         <div class="container mx-auto px-6 py-6 flex items-center">
+            <!-- Site Title -->
             <a href="index.html" class="text-5xl font-bold text-white flex-shrink-0">PLESEL DAVID</a>
-            <div class="ml-auto flex items-center space-x-4">
-                <a href="projects/games.html" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">PORTFOLIO</a>
-                <a href="designdoc.html" class="px-4 py-2 cursor-pointer font-semibold text-white">DESIGN & ECONOMICS</a>
-                <a href="#aboutme" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">ABOUT ME</a>
-                <a href="#contact" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">CONTACT</a>
+
+            <!-- Navigation Container -->
+            <div class="ml-auto flex items-center">
+                <!-- Navigation Items -->
+                <div class="flex space-x-4">
+                    <a href="projects/games.html" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">PORTFOLIO</a>
+                    <a href="designdoc.html" class="px-4 py-2 cursor-pointer font-semibold text-white">DESIGN & ECONOMICS</a>
+                    <a href="#aboutme" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">ABOUT ME</a>
+                    <a href="#contact" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">CONTACT</a>
+                </div>
             </div>
         </div>
     </nav>
+
 
     <!-- About Section -->
     <section id="about" class="relative bg-blue-200 bg-opacity-0 flex items-center min-h-screen transition-transform transition-opacity duration-700 ease-out transition-hidden">
@@ -29,38 +36,59 @@
             <div class="text-center md:text-left md:w-1/2 mb-6 md:mb-0">
                 <h2 class="text-6xl font-bold mb-6 text-white">Economic & System</h2>
                 <h2 class="text-6xl font-bold mb-6 text-blue-700">Game Designer</h2>
+
+                <!-- New Text Div -->
+                <div class="text-justify text-white mt-16">
+                    <p class="text-3xl">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper eleifend. Donec mollis lacus at nulla consequat, a scelerisque dolor interdum.
+                    </p>
+                </div>
             </div>
-            <div class="flex justify-center md:w-1/2">
-                <img src="images/Photo.png" class="rounded-lg shadow-md w-full max-w-sm">
+            <div class="flex justify-center md:w-1/2 ml-32">
+                <img src="images/Photobleu.png" class="rounded-lg shadow-md w-full max-w-md h-auto">
             </div>
         </div>
     </section>
 
-    <!-- My Work Section -->
-    <section id="mywork" class="bg-black-100 py-12">
-        <div class="container mx-auto px-6 flex items-center">
+    <!-- My Portfolio Section -->
+    <section id="mywork" class="bg-gray-800 py-12">
+        <div class="container mx-auto px-6 text-center">
             <!-- Title -->
-            <h2 class="text-4xl font-bold text-white mr-12">My Portfolio</h2>
-            
-            <!-- Icons -->
-            <div class="project-cards flex flex-col mt-10">
-                <div class="bg-gray-100 rounded-lg shadow-md project-card transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer" onclick="showProject('project-1')">
-                    <img src="images/Infernitypic.gif" alt="Project One Icon" class="w-full h-16 object-cover">
-                </div>
-                <div class="bg-gray-100 rounded-lg shadow-md project-card transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer" onclick="showProject('project-2')">
-                    <img src="https://i.seadn.io/s/raw/files/8113474236c065a7308ccd0fe934fe2b.png?auto=format&dpr=1&w=3840" alt="Project Two Icon" class="w-full h-16 object-cover">
-                </div>
-                <div class="bg-gray-100 rounded-lg shadow-md project-card transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer" onclick="showProject('project-3')">
-                    <img src="https://pbs.twimg.com/profile_images/1589715753942540293/jrcOcqHT_400x400.jpg" alt="Project Three Icon" class="w-full h-16 object-cover">
-                </div>
-                <!-- Add more project cards as needed -->
+            <div id="portfolio-text">
+                <p>
+                    <span class="text-yellow-700 font-bold">MY</span> <span class="text-yellow-700 font-bold">PORTFOLIO</span>
+                </p>
             </div>
-        </div>
+            <div class="section-heading text-center 3xl mt-10">
+            </div>
+            <!-- Project Cards -->
+            <div class="flex justify-center gap-6 mt-24"> <!-- Use gap to ensure uniform spacing -->
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='projects/games.html?project=project-1'">
+                    <img src="https://media1.tenor.com/m/iUaUtBpYU2oAAAAd/hv-mtl-keezi.gif" alt="Project Two Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
+                    <div class="card-content">
+                        <h3 class="text-3xl font-bold mb-2">HV MTL : The Hunt</h3>
+                        <p class="text-2xl leading-relaxed mb-4">Roguelite blockchain Game</p>
+                    </div>
+                </div>
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='projects/games.html?project=project-2'">
+                    <img src="images/Infernitypic.gif" alt="Project One Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
+                    <div class="card-content">
+                        <h3 class="text-3xl font-bold mb-2">The Infernity : Ark Angels</h3>
+                        <p class="text-2xl leading-relaxed mb-4">Story-driven Web3 Roguelite</p>
+                    </div>
+                </div>
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="window.location.href='games.html?project=project-3'">
+                    <img src="https://pbs.twimg.com/profile_images/1589715753942540293/jrcOcqHT_400x400.jpg" alt="Project Three Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
+                    <div class="card-content">
+                        <h3 class="text-3xl font-bold mb-2">Time Breachers</h3>
+                        <p class="text-2xl leading-relaxed mb-4">Roleplaying Play-To-Earn Game</p>
+                    </div>
+                </div>
+            </div>
     </section>
-
 
     <!-- Main Section -->
-    <section id="games">
+    <section id="games" class="bg-black py-12">
         <div class="container mx-auto px-6">
             <div class="flex justify-center space-x-6">
                 <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games" onclick="location.href='projects/games.html'">
@@ -151,9 +179,7 @@
 
     <!-- Include JavaScript -->
     <script src="js/index.js"></script>
-
-    <!-- Include JavaScript -->
-    <script src="js/games.js"></script>
+    <script showProject(projectKeys[currentProjectIndex]) ></script>
 
 </body>
 </html>
