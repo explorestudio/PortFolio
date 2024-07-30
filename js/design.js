@@ -3,7 +3,7 @@ const schemes = {
     'scheme-1': {
         title: 'Pipi',
         description: 'PIPIPIPI An illustration of the in-game economy for Project One, showcasing the flow of resources, currency, and player interactions.',
-        featuredImage: 'https://my.machinations.io/d/loot--craft/6130a350ff1511ed915c02f943517e50',
+        featuredImage: 'https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50',
     },
     'scheme-2': {
         title: 'Scheme 2',
