@@ -247,7 +247,7 @@ header {
 /* Conteneur pour les médias en vedette */
 .scheme-media {
     position: relative;
-    padding-bottom: 56.25%; /* Ajusté pour un aspect ratio 16:9 */
+    padding-bottom: 39%; /* Ajusté pour un aspect ratio 16:9 */
     height: 0;
     width: 60%; /* Augmente la largeur pour être plus grand */
     margin-right: 2rem;

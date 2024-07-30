@@ -23,7 +23,7 @@ const schemes = {
             </ul>
             <p class="mb-4">Feel free to look into it directly <a href="https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50" class="text-blue-500 underline hover:text-blue-700">here</a> so you can get see the rest of the game !</p>
     `,
-        featuredImage: 'https://docs.google.com/presentation/d/1JSNgVtpMu9BmuDOMAFwYuwBPpgVzCOLvkMCw3z87a6c/present?usp=sharing',
+        featuredImage: 'https://docs.google.com/presentation/d/e/2PACX-1vRaSd5QmInQi7p8LRfcSb3qMmeIDMx0VNy0OFoP1GG849csJ6RPo82TXjOQ_tlPpRQgyblQCpQEET5I/embed?start=false&loop=true&delayms=500',
     },
     'scheme-3': {
         title: 'Scheme 3',
