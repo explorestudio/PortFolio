@@ -4,17 +4,27 @@ const schemes = {
         description: `
             <p class="mb-4">This project stands out as a prototype for a Web3 clicker game. Using Machinations, I am able to simulate various game features, such as manual and autoclicking:</p>
             <ul class="list-disc pl-5 mb-4">
+            <p class= mb-4> Click on the "play" button to start ! 
                 <li>Clicking on the <span class="text-green-500">green triangle</span> creates a resource</li>
                 <li>Clicking on the <span class="text-yellow-500">orange triangle</span> lets you create a resource generator</li>
             </ul>
-            <p class="mb-4">Clicking on the green triangle creates a resource while clicking on the orange triangle lets you create a resource generator.</p>
+            <p class="mb-4">Feel free to look into it directly <a href="https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50" class="text-blue-500 underline hover:text-blue-700">here</a> so you can get see the rest of the game !</p>
+            
         `,
         featuredImage: 'https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50',
     },
     'scheme-2': {
-        title: 'Scheme 2',
-        description: 'A detailed economic model for Project Two, depicting the monetization strategies and player spending behaviors.',
-        featuredImage: 'https://pbs.twimg.com/profile_images/1589715753942540293/jrcOcqHT_400x400.jpg',
+        title: 'Economic Game design: Web3 approach',
+        description:  `
+            <p class="mb-4">This project stands out as a prototype for a Web3 clicker game. Using Machinations, I am able to simulate various game features, such as manual and autoclicking:</p>
+            <ul class="list-disc pl-5 mb-4">
+            <p class= mb-4> Click on the "play" button to start ! 
+                <li>Clicking on the <span class="text-green-500">green triangle</span> creates a resource</li>
+                <li>Clicking on the <span class="text-yellow-500">orange triangle</span> lets you create a resource generator</li>
+            </ul>
+            <p class="mb-4">Feel free to look into it directly <a href="https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50" class="text-blue-500 underline hover:text-blue-700">here</a> so you can get see the rest of the game !</p>
+    `,
+        featuredImage: 'https://docs.google.com/presentation/d/1JSNgVtpMu9BmuDOMAFwYuwBPpgVzCOLvkMCw3z87a6c/present?usp=sharing',
     },
     'scheme-3': {
         title: 'Scheme 3',
