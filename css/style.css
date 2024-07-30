@@ -199,6 +199,7 @@ header {
 /* Couleur pour le contenu des cartes */
 .card-content {
     background: #28a745; /* Couleur pour Design Docs Analysis */
+    font-size: 4vw;
 }
 
 /* Masquer les titres uniquement au survol */
@@ -209,6 +210,7 @@ header {
 /* Espacement entre le titre et la description */
 .card-content p {
     margin-top: 10px;
+    font-size: 2vw;
 }
 
 /* Ajustements pour la taille du texte des cartes sur les écrans plus petits */
@@ -217,10 +219,10 @@ header {
         font-size: 0.875rem; /* Réduit la taille de la police */
     }
     .card h3 {
-        font-size: 1.5rem; /* Réduit la taille du titre */
+        font-size: 5vw; /* Réduit la taille du titre */
     }
     .card p {
-        font-size: 0.875rem; /* Réduit la taille du texte de la description */
+        font-size: 3.6vw; /* Réduit la taille du texte de la description */
     }
 }
 
@@ -230,10 +232,10 @@ header {
         font-size: 0.75rem; /* Réduit davantage la taille de la police */
     }
     .card h3 {
-        font-size: 1.25rem; /* Réduit la taille du titre */
+        font-size: 5vw; /* Réduit la taille du titre */
     }
     .card p {
-        font-size: 0.75rem; /* Réduit la taille du texte de la description */
+        font-size: 3vw; /* Réduit la taille du texte de la description */
     }
 }
 
