@@ -148,9 +148,9 @@ header {
     right: 0;
     background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
     color: white;
-    padding: 5px;
+    padding: 10px;
     transition: transform 0.3s ease;
-    transform: translateY(20%); /* Relevez les dépliants lorsqu'ils sont pliés */
+    transform: translateY(30%); /* Relevez les dépliants lorsqu'ils sont pliés */
     opacity: 0.85; /* Opacité modérée */
     width: 100%; /* Assure que le dépliant couvre toute la largeur de l'image */
     height: 25%; /* Hauteur initiale des dépliants */
@@ -209,6 +209,32 @@ header {
 /* Espacement entre le titre et la description */
 .card-content p {
     margin-top: 10px;
+}
+
+/* Ajustements pour la taille du texte des cartes sur les écrans plus petits */
+@media (max-width: 768px) {
+    .card-content {
+        font-size: 0.875rem; /* Réduit la taille de la police */
+    }
+    .card h3 {
+        font-size: 1.5rem; /* Réduit la taille du titre */
+    }
+    .card p {
+        font-size: 0.875rem; /* Réduit la taille du texte de la description */
+    }
+}
+
+/* Ajustements supplémentaires pour les très petits écrans */
+@media (max-width: 480px) {
+    .card-content {
+        font-size: 0.75rem; /* Réduit davantage la taille de la police */
+    }
+    .card h3 {
+        font-size: 1.25rem; /* Réduit la taille du titre */
+    }
+    .card p {
+        font-size: 0.75rem; /* Réduit la taille du texte de la description */
+    }
 }
 
 /* Mise en forme du projet en vedette */
