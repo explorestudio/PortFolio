@@ -9,6 +9,57 @@ header {
     top: 0;
 }
 
+/* Tailwind adjustements */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-4-5xl {
+    font-size: 2.5rem; /* Taille intermédiaire entre 4xl (2.25rem) et 5xl (3rem) */
+  }
+  .w-128 {
+    width: 32rem; /* 128 * 0.25rem */
+  }
+  .h-128 {
+    height: 32rem; /* 128 * 0.25rem */
+  }
+}
+
+/* Section about me */
+
+ /* Effet d'apparition titre + image */
+ .transition-hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    visibility: hidden;
+}
+
+.transition-visible {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Opacité de la superposition */
+}
+
+/* Augmenter la taille de la section "About me" */
+#about {
+    position: relative;
+    z-index:1;
+    opacity: 1;
+    min-height: 100vh; /* Assurez-vous que la section occupe toute la hauteur de la fenêtre */
+    padding: 100px 0; /* Ajoutez du padding pour plus d'espace */
+}
+
 /* Background bleu foncé pour la section games */
 .bg-dark-blue {
     background-color: #001f3f;
@@ -191,17 +242,6 @@ header {
     object-fit: cover;
 }
 
-/* Superposition transparente */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: 1;
-}
-
 /* Description du projet en vedette */
 .featured-description {
     width: 40%;
@@ -275,6 +315,9 @@ header {
 /* Mise en forme du conteneur des jeux favoris */
 #favorite-games .bg-gray-100 {
     padding: 1rem; /* Ajuster le padding pour rendre les images et le texte uniformes */
+    opacity: 1;
+    width: 400px;
+    height: 400px;
 }
 
 /* Ajoute une marge entre les sections pour éviter le chevauchement */
@@ -284,7 +327,7 @@ header {
 
 /* Marge et largeur de la section games */
 #games {
-    padding: 100px 0;    
+    padding: 100px 0; 
 }
 
 /* style.css */
@@ -313,38 +356,12 @@ header {
     justify-content: center;
 }
 
-.featured-media {
+.projects-media {
     position: relative;
-    padding-bottom: 50%; /* Adjusted aspect ratio for larger view */
+    padding-bottom: 56.25%; /* Adjusted aspect ratio for larger view */
     height: 0;
     width: 70%;
     margin-right: 2rem;
-}
-
-.featured-media iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    object-fit: cover;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: 1;
-}
-
-.featured-description {
-    width: 30%;
-    margin-top: 0;
-    padding-left: 12px;
 }
 
 .scheme-cards {
@@ -371,19 +388,6 @@ header {
 .scheme-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-.chevron {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #333;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.chevron:hover {
-    color: #666;
 }
 
 .cursor-pointer {

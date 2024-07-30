@@ -8,6 +8,7 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-900">
+    
     <!-- Header with Navigation -->
     <header class="bg-white shadow fixed w-full z-10 top-0">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
@@ -29,14 +30,14 @@
                     <div class="overlay"></div>
                 </div>
                 <div class="featured-description w-full lg:w-3/5 lg:pl-12 mt-6 lg:mt-0">
-                    <h3 class="text-3xl font-bold mb-5" id="featured-title">Project One</h3>
-                    <p class="text-lg leading-relaxed mb-5" id="featured-description">This is a brief description of Project One. It showcases the main features and technologies used.</p>
+                    <h3 class="text-3xl font-bold mb-5" id="featured-title"></h3>
+                    <p class="text-lg leading-relaxed mb-5" id="featured-description"></p>
                     <a href="projects/designdoc.html" target="_blank" class="text-teal-500 hover:text-teal-700" id="featured-link">View Project</a>
                 </div>
             </div>
             <div class="project-cards flex flex-col mt-10">
                 <div class="bg-gray-100 rounded-lg shadow-md project-card transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer" onclick="showProject('project-1')">
-                    <img src="https://media.discordapp.net/attachments/898572152813527061/1067284713770852433/157.gif?ex=66a66398&is=66a51218&hm=01d07dd3102f04adb8fb0352f0da2fca95544c25a50504bfed8deccd4add6fcc&=" alt="Project One Icon" class="w-full h-16 object-cover">
+                    <img src="../images/Infernitypic.gif" alt="Project One Icon" class="w-full h-16 object-cover">
                 </div>
                 <div class="bg-gray-100 rounded-lg shadow-md project-card transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer" onclick="showProject('project-2')">
                     <img src="https://i.seadn.io/s/raw/files/8113474236c065a7308ccd0fe934fe2b.png?auto=format&dpr=1&w=3840" alt="Project Two Icon" class="w-full h-16 object-cover">
@@ -57,6 +58,10 @@
     </section>
 
     <!-- Include JavaScript -->
-    <script src="../js/main.js"></script>
+    <script src="../js/games.js"></script>
+    
+    <!-- Initial display of the first project -->
+    <script showProject(projectKeys[currentProjectIndex]);></script>
+
 </body>
 </html>
