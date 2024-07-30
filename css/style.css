@@ -244,9 +244,35 @@ header {
     object-fit: cover;
 }
 
+/* Conteneur pour les médias en vedette */
+.scheme-media {
+    position: relative;
+    padding-bottom: 56.25%; /* Ajusté pour un aspect ratio 16:9 */
+    height: 0;
+    width: 60%; /* Augmente la largeur pour être plus grand */
+    margin-right: 2rem;
+}
+
+/* Mise en forme des iframes */
+.scheme-media iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+}
+
 /* Description du projet en vedette */
 .featured-description {
     width: 40%;
+    margin-top: 0;
+    padding-left: 12px;
+}
+
+.scheme-description {
+    width: 40%; /* Largeur ajustée pour équilibrer avec les médias */
     margin-top: 0;
     padding-left: 12px;
 }
@@ -355,7 +381,8 @@ header {
     flex-direction: row;
     margin-bottom: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .projects-media {
