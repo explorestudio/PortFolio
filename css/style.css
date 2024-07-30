@@ -153,7 +153,7 @@ header {
     transform: translateY(30%); /* Relevez les dépliants lorsqu'ils sont pliés */
     opacity: 0.85; /* Opacité modérée */
     width: 100%; /* Assure que le dépliant couvre toute la largeur de l'image */
-    height: 25%; /* Hauteur initiale des dépliants */
+    height: 30%; /* Hauteur initiale des dépliants */
 }
 
 /* Couleur pour le titre Games */
@@ -170,11 +170,15 @@ header {
 /* Titre des cartes */
 .card h3 {
     margin: 0;
+    font-size: 1.5rem; /* Réduit la taille du titre pour plus de lisibilité */
 }
 
 /* Masquer la description par défaut */
 .card p {
     display: none;
+    font-size: 1rem; /* Réduit la taille de la description pour éviter le débordement */
+    line-height: 1.4; /* Ajuste la hauteur de ligne pour plus de lisibilité */
+    margin: 0;
 }
 
 /* Afficher la description au survol */
@@ -199,7 +203,6 @@ header {
 /* Couleur pour le contenu des cartes */
 .card-content {
     background: #28a745; /* Couleur pour Design Docs Analysis */
-    font-size: 4vw;
 }
 
 /* Masquer les titres uniquement au survol */
@@ -209,34 +212,7 @@ header {
 
 /* Espacement entre le titre et la description */
 .card-content p {
-    margin-top: 10px;
-    font-size: 2vw;
-}
-
-/* Ajustements pour la taille du texte des cartes sur les écrans plus petits */
-@media (max-width: 768px) {
-    .card-content {
-        font-size: 0.875rem; /* Réduit la taille de la police */
-    }
-    .card h3 {
-        font-size: 5vw; /* Réduit la taille du titre */
-    }
-    .card p {
-        font-size: 3.6vw; /* Réduit la taille du texte de la description */
-    }
-}
-
-/* Ajustements supplémentaires pour les très petits écrans */
-@media (max-width: 480px) {
-    .card-content {
-        font-size: 0.75rem; /* Réduit davantage la taille de la police */
-    }
-    .card h3 {
-        font-size: 5vw; /* Réduit la taille du titre */
-    }
-    .card p {
-        font-size: 3vw; /* Réduit la taille du texte de la description */
-    }
+    margin-top: 0.5rem;
 }
 
 /* Mise en forme du projet en vedette */
