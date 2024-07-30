@@ -9,7 +9,6 @@ const schemes = {
                 <li>Clicking on the <span class="text-yellow-500">orange triangle</span> lets you create a resource generator</li>
             </ul>
             <p class="mb-4">Feel free to look into it directly <a href="https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50" class="text-blue-500 underline hover:text-blue-700">here</a> so you can get see the rest of the game !</p>
-            
         `,
         featuredImage: 'https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50',
     },
