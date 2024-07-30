@@ -57,3 +57,6 @@ function nextScheme() {
     currentSchemeIndex = (currentSchemeIndex < schemeKeys.length - 1) ? currentSchemeIndex + 1 : 0;
     showScheme(schemeKeys[currentSchemeIndex]);
 }
+
+// Initial display of the first project
+showScheme(schemeKeys[currentSchemeIndex]);
