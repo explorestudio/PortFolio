@@ -14,8 +14,16 @@ const projects = {
         link: 'https://hv-mtl.com/'
     },
     'project-2': {
-        title: 'The Infernity <span class="text-gray-500 italic font-bold">(2022 - 2023)</span><br><span class="inline-block bg-red-500 text-white text-sm px-2 py-1 rounded-full mt-2">Game Economy Designer</span>  <span class="inline-block bg-blue-500 text-white text-sm px-2 py-1 rounded-full mt-2">Gameplay Designer</span>',
-        description: 'This is a brief description of Project Two. It highlights the key functionalities and tools utilized.',
+        title: 'The Infernity <span class="text-gray-500 italic font-bold">(2022 - 2023)</span><br><span style="font-size: 0.875rem; color: gray; font-style: italic; line-height: 0.5; display: inline;">Project cancelled</span><br><span class="inline-block bg-red-500 text-white text-sm px-2 py-1 rounded-full mt-2">Game Economy Designer</span> <span class="inline-block bg-blue-500 text-white text-sm px-2 py-1 rounded-full mt-2">Gameplay Designer</span>',
+        description: `
+            <p class="mb-4 mt-2">The Infernity is project of a roguelite game ambitionned by <span class="font-bold">Ambre Verse</span></p>
+            <p class="mb-4 mt-2">I created and documented the game mechanics for the technical and design teams and contributed to implementing the game logic in collaboration with the client.</p>
+            <span class="font-bold">Task overview</span>
+            <ul class="list-disc pl-5 mb-4">
+                <li>Worked with <span class="font-bold">Figma </span>, creating <span class="font-bold">UI wireframes </span>and diagram the game design </span></li>
+                <li>Updating and managing game documentation with <span class="font-bold"> Jira </span> and <span class="font-bold">Confluence </span></li>
+            </ul>
+        `,
         featuredImage: 'https://www.youtube.com/embed/6s_a8YN04Qc?autoplay=1&mute=1&controls=0&loop=1&playlist=6s_a8YN04Qc&modestbranding=1&showinfo=0&rel=0',
         link: 'https://theinfernity.com/game'
     },
