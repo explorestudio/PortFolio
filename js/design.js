@@ -23,18 +23,13 @@ const schemes = {
         featuredImage: 'https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50',
     },
     'scheme-2': {
-        title: 'Economic Game design: Web3 approach',
+        title: 'Web3 Economics : User generated content in a Dungeon Crawling game',
         description:  `
-            <p class="mb-4">This project stands out as a prototype for a Web3 clicker game. Using Machinations, I am able to simulate various game features, such as manual and autoclicking:</p>
-            <ul class="list-disc pl-5 mb-4">
-            <p class= mb-4> Click on the "play" button to start !
-                <li>Clicking on the <span class="text-green-500">green triangle</span> creates a resource</li>
-                <li>Clicking on the <span class="text-yellow-500">orange triangle</span> lets you create a resource generator</li>
-            </ul>
-            <p class="mb-4">Feel free to look into it directly <a href="https://my.machinations.io/d/clicker-v4/910429c003f011ee915c02f943517e50" class="text-blue-500 underline hover:text-blue-700">here</a> 
-            so you can get see the rest of the game !</p>
+            <p class="mb-4">In theses slides, I illustrated how Web3 incentivizes and enables <span class = font-bold>user generated content (UGC)</span> using the example of a dungeon-crawling game.</p>
+            <p class= mb-4> Web2 and Web3 players together build a thriving game ecosystem by blending community engagement with economic incentives that <span class = font-bold>transform players into active contributors.</span></p>
+            <p class = mb-4>This transition from mere consumers to engaged developers drives continuous innovation and keeps the game dynamic, ensuring <span class = font-bold>sustainable growth</span> and <span class = font-bold>long-term engagement</span> as the community contributes to its evolution.</p>   
     `,
-        featuredImage: 'https://docs.google.com/presentation/d/e/2PACX-1vRaSd5QmInQi7p8LRfcSb3qMmeIDMx0VNy0OFoP1GG849csJ6RPo82TXjOQ_tlPpRQgyblQCpQEET5I/embed?start=false&loop=true&delayms=500',
+        featuredImage: 'https://docs.google.com/presentation/d/e/2PACX-1vQkwYNppEN22Km-bOgisQKzfubprSCm5aef-QVcboTQrYDJTYepAUz-HBz-0V2VRwSDMPhNQ-ahAFJK/embed?start=false&loop=true&delayms=5000',
     },
     'scheme-3': {
         title: 'Scheme 3',
