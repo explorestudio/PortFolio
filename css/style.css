@@ -162,7 +162,7 @@ header {
 }
 
 /* Couleur pour le titre Design Docs Analysis */
-.card.design-docs .card-content {
+.card.economic-docs .card-content {
     background: rgba(8, 207, 131, 0.8);
 }
 
@@ -344,8 +344,8 @@ header {
 #favorite-games .bg-gray-100 {
     padding: 1rem; /* Ajuster le padding pour rendre les images et le texte uniformes */
     opacity: 1;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
 }
 
 /* Ajoute une marge entre les sections pour éviter le chevauchement */
