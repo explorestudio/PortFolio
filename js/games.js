@@ -7,7 +7,8 @@ const projects = {
             <span class="font-bold">Task overview</span>
             <ul class="list-disc pl-5 mb-4">
                 <li>Worked with <span class="font-bold">Figma </span>, creating <span class="font-bold">UI wireframes </span>and diagram the game design </span></li>
-                <li>Updating and managing game documentation with <span class="font-bold"> Jira </span> and <span class="font-bold">Confluence </span></li>
+                <li>Updated and managed game documentation with <span class="font-bold"> Jira </span> and <span class="font-bold">Confluence </span></li>
+                <li>Created a <span class="font-bold">vertical slice </span> for prototyping the game</li>
             </ul>
         `,
         featuredImage: 'https://www.youtube.com/embed/M7-Y4Lm8EAI?autoplay=1&mute=1&loop=1&modestbranding=1&rel=0&controls=0&playlist=M7-Y4Lm8EAI&modestbranding=1&showinfo=0&iv_load_policy=3&rel=0',
@@ -20,8 +21,8 @@ const projects = {
             <p class="mb-4 mt-2">I created and documented the game mechanics for the technical and design teams and contributed to implementing the game logic in collaboration with the client.</p>
             <span class="font-bold">Task overview</span>
             <ul class="list-disc pl-5 mb-4">
-                <li>Worked with <span class="font-bold">Figma </span>, creating <span class="font-bold">UI wireframes </span>and diagram the game design </span></li>
-                <li>Updating and managing game documentation with <span class="font-bold"> Jira </span> and <span class="font-bold">Confluence </span></li>
+                <li>Designed & supervized the economy of the game</li>
+                <li>Wrote documentation (One Pager, Pitch, GCD, GDD, Scripts, Storyboards, Whitepaper..) using <span class="font-bold"> Notion</li>
             </ul>
         `,
         featuredImage: 'https://www.youtube.com/embed/6s_a8YN04Qc?autoplay=1&mute=1&controls=0&loop=1&playlist=6s_a8YN04Qc&modestbranding=1&showinfo=0&rel=0',
