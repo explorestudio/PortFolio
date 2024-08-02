@@ -10,9 +10,39 @@ header {
 }
 
 .active {
-    color: blue;
-    border-bottom: 2px solid blue;
+    color: rgba(29, 78, 216, 1);
+    border-bottom: 2px solid rgb(29, 78, 216);
 }
+
+/* Full-page background video */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    opacity: 0.2; /* Ajustez cette valeur pour modifier l'opacité de la vidéo */
+}
+
+/* Ensure content is above the overlay */
+nav {
+    position: relative;
+    z-index: 10; /* Higher than the overlay's z-index */
+}
+
 
 /* Tailwind adjustements */
 
@@ -76,34 +106,71 @@ header {
     color: white;
 }
 
+/* Section Portfolio */
+
+
+
 /* Style for the portfolio text with animation */
 #portfolio-text {
     font-size: 3rem;
-    overflow: hidden;
     white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .05em;
+    margin-top: 3rem; /* Espacement au-dessus */
+    display: flex; /* Utilisation de flexbox pour l'alignement */
+    align-items: center; /* Aligne verticalement les éléments au centre */
+}
+
+.static-text {
+    color: white; /* Le texte "MY" reste blanc */
+    flex-shrink: 0; /* Empêche le rétrécissement du texte "MY" */
+}
+
+.dynamic-text {
     border-right: .15em solid orange;
-    width: 15ch;
-    animation: typing-text 1s steps(24, end) 1s 1, pause 5s 2s 1, blink-caret-text 0.75s step-end 0s infinite;
-    margin-top: 3rem; /* Add spacing between cards and animated text */
+    color: orange;
+    display: inline-block;
+    overflow: hidden; /* Cache le texte qui dépasse */
+    white-space: nowrap;
+    /* Les animations seront gérées dynamiquement par les classes */
 }
 
-@keyframes typing-text {
+@keyframes typing {
     from { width: 0; }
-    to { width: 15ch; /* Adjust this value to match the text length */ }
+    to { width: 7.7ch; /* Longueur de "PORTFOLIO" */ }
 }
 
-@keyframes pause {
-    from { opacity: 1; }
-    to { opacity: 1; }
+@keyframes erase {
+    from { width: 7.7ch; }
+    to { width: 0; }
 }
 
-@keyframes blink-caret-text {
-    0%, 100% { border-color: transparent; }
+@keyframes typing-2 {
+    from { width: 0; }
+    to { width: 13.4ch; /* Longueur de "DOCUMENTATION" */ }
+}
+
+@keyframes blink-caret-portfolio {
+    from, to { border-color: transparent; }
     50% { border-color: orange; }
 }
 
+@keyframes blink-caret-documentation {
+    from, to { border-color: transparent; }
+    50% { border-color: #28a745; }
+}
+
+.typing-documentation {
+    border-right-color: #28a745;
+    color: #28a745;
+    animation: typing-2 0.75s steps(24, end) 0s 1 normal forwards, 
+               blink-caret-documentation 0.75s step-end infinite;
+}
+
+.typing-portfolio {
+    border-right-color: orange;
+    color: orange;
+    animation: typing 0.75s steps(20, end) 0s 1 normal forwards, 
+               blink-caret-portfolio 0.75s step-end infinite;
+}
 
 /* Transition pour les éléments de navigation */
 .nav-item {
@@ -158,7 +225,6 @@ header {
     transform: translateY(30%); /* Relevez les dépliants lorsqu'ils sont pliés */
     opacity: 0.85; /* Opacité modérée */
     width: 100%; /* Assure que le dépliant couvre toute la largeur de l'image */
-    height: 30%; /* Hauteur initiale des dépliants */
 }
 
 /* Couleur pour le titre Games */
@@ -175,13 +241,11 @@ header {
 /* Titre des cartes */
 .card h3 {
     margin: 0;
-    font-size: 1.5rem; /* Réduit la taille du titre pour plus de lisibilité */
 }
 
 /* Masquer la description par défaut */
 .card p {
     display: none;
-    font-size: 1rem; /* Réduit la taille de la description pour éviter le débordement */
     line-height: 1.4; /* Ajuste la hauteur de ligne pour plus de lisibilité */
     margin: 0;
 }

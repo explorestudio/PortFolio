@@ -9,12 +9,26 @@
 </head>
 
 <body class="bg-black">
+    <!-- Background Video -->
+     
+    <!-- <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="https://davidplesel.com/wp-content/uploads/2024/07/header.mp4" type="video/mp4">
+        </video>
+    </div>
+-->
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="https://davidplesel.com/wp-content/uploads/2024/07/header.mp4" type="video/mp4">
+        </video>
+    </div>
 
     <!-- Navigation -->
     <nav class="bg-black shadow fixed w-full z-10 top-0">
         <div class="container mx-auto px-6 py-6 flex items-center">
             <!-- Site Title -->
-            <a href="#about" id="home" class="text-5xl font-bold text-white flex-shrink-0">PLESEL DAVID</a>
+            <a href="#about" id="home" class="text-4xl font-bold text-white flex-shrink-0">HOME</a>
             <!-- Navigation Container -->
             <div class="ml-auto flex items-center">
                 <!-- Navigation Items -->
@@ -50,58 +64,50 @@
         </div>
     </section>
 
-
     <!-- My Portfolio Section -->
     <section id="mywork" class="bg-gray-800 py-12 min-h-screen">
         <div class="container mx-auto px-6 text-center">
             <!-- Title -->
-            <div id="portfolio-text">
-                <p>
-                    <span class="text-yellow-700 font-bold">MY</span> <span class="text-yellow-700 font-bold">PORTFOLIO</span>
-                </p>
-            </div>
-            <div class="section-heading text-center 3xl mt-10">
+            <div id="portfolio-text" class="font-bold">
+                <span class="static-text text-6xl">My</span>&nbsp;
+                <span class="dynamic-text text-6xl">Portfolio</span>
             </div>
             <!-- Project Cards -->
             <div class="flex justify-center gap-6 mt-24"> <!-- Use gap to ensure uniform spacing -->
                 <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='games.html?project=project-1'">
                     <img src="https://media1.tenor.com/m/iUaUtBpYU2oAAAAd/hv-mtl-keezi.gif" alt="Project Two Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
-                    <div class="card-content">
-                        <h3 class="text-3xl font-bold mb-2">HV MTL : The Hunt</h3>
-                        <p class="text-2xl leading-relaxed mb-4">Roguelite blockchain Game</p>
+                    <div class="card-content h-32">
+                        <h3 class="text-2xl font-bold mb-2">HV MTL : The Hunt</h3>
+                        <p class="text-lg leading-relaxed mb-4">Roguelite blockchain Game</p>
                     </div>
                 </div>
                 <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='games.html?project=project-2'">
                     <img src="images/Infernitypic.gif" alt="Project One Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
-                    <div class="card-content">
-                        <h3 class="text-3xl font-bold mb-2">The Infernity : Ark Angels</h3>
-                        <p class="text-2xl leading-relaxed mb-4">Story-driven Web3 Roguelite</p>
+                    <div class="card-content h-32">
+                        <h3 class="text-2xl font-bold mb-2">The Infernity : Ark Angels</h3>
+                        <p class="text-lg leading-relaxed mb-4">Story-driven Web3 Roguelite</p>
                     </div>
                 </div>
                 <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='games.html?project=project-3'">
                     <img src="https://pbs.twimg.com/profile_images/1589715753942540293/jrcOcqHT_400x400.jpg" alt="Project Three Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
-                    <div class="card-content">
-                        <h3 class="text-3xl font-bold mb-2">Time Breachers</h3>
-                        <p class="text-2xl leading-relaxed mb-4">Roleplaying Play-To-Earn Game</p>
+                    <div class="card-content h-32">
+                        <h3 class="text-2xl font-bold mb-2">Time Breachers</h3>
+                        <p class="text-lg leading-relaxed mb-4">Roleplaying Play-To-Earn Game</p>
                     </div>
                 </div>
             </div>
-    </section>
-
-    <!-- Documentation section -->
-    <section id="games" class="bg-black py-12 min-h-screen">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-end space-x-6">
-                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer economic-docs" onclick="location.href='economicdoc.html'">
-                    <img src="https://stability-images-upload.s3.amazonaws.com/v1_txt2img_08ea59dd-48fa-4f5d-85ba-e71ad50a03ba.png" alt="Design Docs Analysis">
-                    <div class="card-content">
-                        <h3 class="text-3xl font-bold mb-2">Economy Docs</h3>
+            <!--  Documentation Cards -->
+            <div class="flex justify-center gap-6 mt-24"> <!-- Align with Project Cards -->
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer economic-docs flex flex-col items-center" onclick="location.href='economicdoc.html'">
+                    <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/352457466/original/b5ad3d92338372bcf4e76c59896d1277ebd4266a/offer-you-a-consultation-for-your-game-economy-design.jpg" alt="Design Docs Analysis" class="w-32 h-32 object-cover"> <!-- Uniform size -->
+                    <div class="card-content h-32">
+                        <h3 class="text-3xl font-bold mb-2">Economic Docs</h3>
                         <p class="text-lg leading-relaxed mb-4">Take a look at my work on game economies here</p>
                     </div>
                 </div>
-                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer economic-docs" onclick="location.href='economicdoc.html'">
-                    <img src="https://stability-images-upload.s3.amazonaws.com/v1_txt2img_08ea59dd-48fa-4f5d-85ba-e71ad50a03ba.png" alt="Design Docs Analysis">
-                    <div class="card-content">
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer economic-docs flex flex-col items-center" onclick="location.href='economicdoc.html'">
+                    <img src="https://stability-images-upload.s3.amazonaws.com/v1_txt2img_08ea59dd-48fa-4f5d-85ba-e71ad50a03ba.png" alt="Design Docs Analysis" class="w-32 h-32 object-cover"> <!-- Uniform size -->
+                    <div class="card-content h-32">
                         <h3 class="text-3xl font-bold mb-2">Game Design Docs</h3>
                         <p class="text-lg leading-relaxed mb-4">Read the design documents I've published for various projects</p>
                     </div>
@@ -109,7 +115,7 @@
             </div>
         </div>
     </section>
-     
+
 
     <!-- Favorite Games Section -->
     <section id="favorite-games" class="py-20 bg-gray-200 bg-opacity-0 min-h-screen">
