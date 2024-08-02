@@ -9,6 +9,11 @@ header {
     top: 0;
 }
 
+.active {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
 /* Tailwind adjustements */
 
 @tailwind base;
@@ -333,19 +338,19 @@ header {
     margin-bottom: 2rem; /* Ajouter une marge en bas */
 }
 
+/* Mise en forme du conteneur des jeux favoris */
+#favorite-games .bg-gray-100 {
+    width: 400px;
+    height: 400px;
+    padding: 1rem; /* Ajuster le padding pour rendre les images et le texte uniformes */
+    opacity: 1;
+}
+
 /* Mise en forme des images dans les jeux favoris */
 #favorite-games .game-image {
     width: 100%;
     height: 100%; /* Pour que l'image couvre toute la zone */
     object-fit: cover;
-}
-
-/* Mise en forme du conteneur des jeux favoris */
-#favorite-games .bg-gray-100 {
-    padding: 1rem; /* Ajuster le padding pour rendre les images et le texte uniformes */
-    opacity: 1;
-    width: 200px;
-    height: 200px;
 }
 
 /* Ajoute une marge entre les sections pour éviter le chevauchement */

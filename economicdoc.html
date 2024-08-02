@@ -10,14 +10,16 @@
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Header with Navigation -->
+
     <header class="bg-white shadow fixed w-full z-10 top-0">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-semibold">HOME</a>
-            <nav class="space-x-4">
-                <a href="projects/games.html" class="px-4 py-2 font-bold">PORTFOLIO</a>
-                <a href="designdoc.html" class="px-4 py-2 cursor-pointer font-semibold">GAME DESIGN</a>
-                <a href="index.html#aboutme" class="nav-item px-4 py-2 font-bold">ABOUT ME</a>
-                <a href="index.html#contact" class="px-4 py-2 font-bold">CONTACT</a>
+        <div class="container mx-auto px-6 py-6 flex items-center">
+            <a href="index.html" id="home" class="nav-item text-2xl font-semibold">HOME</a>
+            <nav class="ml-auto flex items-center">
+                <a href="games.html" id="portfolio" class="nav-item px-4 py-2 font-bold">PORTFOLIO</a>
+                <a href="designdoc.html" id="game-design" class="nav-item px-4 py-2 cursor-pointer font-semibold">GAME DESIGN</a>
+                <a href="economicdoc.html" id="economics" class="nav-item px-4 py-2 cursor-pointer font-semibold">ECONOMICS</a>
+                <a href="aboutme.html" id="about-me" class="nav-item px-4 py-2 font-bold">ABOUT ME</a>
+                <a href="index.html#contact" id="contact" class="nav-item px-4 py-2 font-bold">CONTACT</a>
             </nav>
         </div>
     </header>
@@ -58,6 +60,7 @@
 
     <!-- Include JavaScript -->
     <script src="js/economic.js"></script>
+    <script src="js/header.js"></script>
 
     <!-- Initial display of the first scheme -->
     <script showScheme(schemeKeys[currentSchemeIndex]);></script>

@@ -14,45 +14,45 @@
     <nav class="bg-black shadow fixed w-full z-10 top-0">
         <div class="container mx-auto px-6 py-6 flex items-center">
             <!-- Site Title -->
-            <a href="index.html" class="text-5xl font-bold text-white flex-shrink-0">PLESEL DAVID</a>
-
+            <a href="#about" id="home" class="text-5xl font-bold text-white flex-shrink-0">PLESEL DAVID</a>
             <!-- Navigation Container -->
             <div class="ml-auto flex items-center">
                 <!-- Navigation Items -->
                 <div class="flex space-x-4">
-                    <a href="projects/games.html" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">PORTFOLIO</a>
-                    <a href="designdoc.html" class="px-4 py-2 cursor-pointer font-semibold text-white">GAME DESIGN</a>
-                    <a href="economicdoc.html" class="px-4 py-2 cursor-pointer font-semibold text-white">ECONOMICS</a>
-                    <a href="index.html" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">ABOUT ME</a>
-                    <a href="#contact" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">CONTACT</a>
+                    <a href="games.html" id="portfolio" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">PORTFOLIO</a>
+                    <a href="designdoc.html" id="game-design" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">GAME DESIGN</a>
+                    <a href="economicdoc.html" id="economics" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">ECONOMICS</a>
+                    <a href="aboutme.html" id="about-me" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">ABOUT ME</a>
+                    <a href="#contact" id="contact" class="nav-item px-4 py-2 cursor-pointer font-semibold text-white">CONTACT</a>
                 </div>
             </div>
         </div>
     </nav>
 
-
     <!-- About Section -->
     <section id="about" class="relative bg-blue-200 bg-opacity-0 flex items-center min-h-screen transition-transform transition-opacity duration-700 ease-out transition-hidden">
         <div class="container mx-auto flex flex-col md:flex-row items-center px-6 py-6">
-            <div class="text-center md:text-left md:w-1/2 mb-6 md:mb-0">
+            <div class="text-center md:text-left md:w-1/2 mb-6 md:mb-0 relative">
                 <h2 class="text-6xl font-bold mb-6 text-white">Economic & System</h2>
                 <h2 class="text-6xl font-bold mb-6 text-blue-700">Game Designer</h2>
-
-                <!-- New Text Div -->
+                <!-- Presentation -->
                 <div class="text-justify text-white mt-16">
-                    <p class="text-3xl">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper eleifend. Donec mollis lacus at nulla consequat, a scelerisque dolor interdum.
+                    <p class="text-2xl">
+                        My name is Plesel David, and I started out with a love for mathematics and informatics before I found my way into one of my biggest passions: video game design.<br><br>
+                        I’ve always enjoyed the balance between analytical thinking and creative exploration. This blend of skills has led me to focus on designing systems that are fair and engaging<br><br>
+                        I love learning new things and experimenting with ideas, whether in professional projects or personal ones, and I’m always eager to see where this journey will take me next.
                     </p>
                 </div>
             </div>
-            <div class="flex justify-center md:w-1/2 ml-32">
-                <img src="images/Photobleu.png" class="rounded-lg shadow-md w-full max-w-md h-auto">
+            <div class="flex flex-col items-center md:w-1/2 ml-32 relative">
+                <img src="images/Photobleu.png" class="rounded-lg shadow-md w-full max-w-md h-auto mb-4">
             </div>
         </div>
     </section>
 
+
     <!-- My Portfolio Section -->
-    <section id="mywork" class="bg-gray-800 py-12">
+    <section id="mywork" class="bg-gray-800 py-12 min-h-screen">
         <div class="container mx-auto px-6 text-center">
             <!-- Title -->
             <div id="portfolio-text">
@@ -64,21 +64,21 @@
             </div>
             <!-- Project Cards -->
             <div class="flex justify-center gap-6 mt-24"> <!-- Use gap to ensure uniform spacing -->
-                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='projects/games.html?project=project-1'">
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='games.html?project=project-1'">
                     <img src="https://media1.tenor.com/m/iUaUtBpYU2oAAAAd/hv-mtl-keezi.gif" alt="Project Two Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
                     <div class="card-content">
                         <h3 class="text-3xl font-bold mb-2">HV MTL : The Hunt</h3>
                         <p class="text-2xl leading-relaxed mb-4">Roguelite blockchain Game</p>
                     </div>
                 </div>
-                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='projects/games.html?project=project-2'">
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='games.html?project=project-2'">
                     <img src="images/Infernitypic.gif" alt="Project One Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
                     <div class="card-content">
                         <h3 class="text-3xl font-bold mb-2">The Infernity : Ark Angels</h3>
                         <p class="text-2xl leading-relaxed mb-4">Story-driven Web3 Roguelite</p>
                     </div>
                 </div>
-                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='projects/games.html?project=project-3'">
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer games flex flex-col items-center" onclick="location.href='games.html?project=project-3'">
                     <img src="https://pbs.twimg.com/profile_images/1589715753942540293/jrcOcqHT_400x400.jpg" alt="Project Three Icon" class="w-32 h-32 object-cover"> <!-- Uniform size -->
                     <div class="card-content">
                         <h3 class="text-3xl font-bold mb-2">Time Breachers</h3>
@@ -88,52 +88,77 @@
             </div>
     </section>
 
-    <!-- Main Section -->
-    <section id="games" class="bg-black py-12">
+    <!-- Documentation section -->
+    <section id="games" class="bg-black py-12 min-h-screen">
         <div class="container mx-auto px-6">
             <div class="flex justify-end space-x-6">
                 <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer economic-docs" onclick="location.href='economicdoc.html'">
                     <img src="https://stability-images-upload.s3.amazonaws.com/v1_txt2img_08ea59dd-48fa-4f5d-85ba-e71ad50a03ba.png" alt="Design Docs Analysis">
                     <div class="card-content">
-                        <h3 class="text-3xl font-bold mb-2">Design & Economic Docs</h3>
-                        <p class="text-lg leading-relaxed mb-4">Read my design documents and see my work on game economy</p>
+                        <h3 class="text-3xl font-bold mb-2">Economy Docs</h3>
+                        <p class="text-lg leading-relaxed mb-4">Take a look at my work on game economies here</p>
+                    </div>
+                </div>
+                <div class="card bg-gray-100 rounded-lg shadow-md p-6 cursor-pointer economic-docs" onclick="location.href='economicdoc.html'">
+                    <img src="https://stability-images-upload.s3.amazonaws.com/v1_txt2img_08ea59dd-48fa-4f5d-85ba-e71ad50a03ba.png" alt="Design Docs Analysis">
+                    <div class="card-content">
+                        <h3 class="text-3xl font-bold mb-2">Game Design Docs</h3>
+                        <p class="text-lg leading-relaxed mb-4">Read the design documents I've published for various projects</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
+     
 
     <!-- Favorite Games Section -->
-    <section id="favorite-games" class="py-20 bg-gray-200 bg-opacity-0">
+    <section id="favorite-games" class="py-20 bg-gray-200 bg-opacity-0 min-h-screen">
         <div class="container mx-auto px-6">
             <h2 class="text-5xl font-bold mb-6 text-white">Favorite Games</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!--Game 1: Undertale --> 
-                <div class="bg-gray-100 rounded-lg shadow-md p-6">
-                    <img src="https://static.actugaming.net/media/2018/08/undertale-1-889x500.jpg" alt="Undertale" class="game-image rounded-md mb-4">
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://static.actugaming.net/media/2018/08/undertale-1-889x500.jpg" alt="Undertale" class="game-image rounded-md">
                 </div>
                 <!-- Game 2: League of Legends --> 
-                <div class="bg-gray-100 rounded-lg shadow-md p-6">
-                    <img src="https://i0.wp.com/onlyforgamer.com/wp-content/uploads/2018/02/512x51s-1.png?fit=512%2C512&ssl=1" alt="League of Legends" class="game-image rounded-md mb-4">
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://i0.wp.com/onlyforgamer.com/wp-content/uploads/2018/02/512x51s-1.png?fit=512%2C512&ssl=1" alt="League of Legends" class="game-image rounded-md">
                 </div>
                 <!-- Game 3: Minecraft --> 
-                <div class="bg-gray-100 rounded-lg shadow-md p-6">
-                    <img src="https://e-enfance.org/wp-content/uploads/2021/06/mincraft.jpg" alt="Minecraft" class="game-image rounded-md mb-4">
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbWOL6AqgFI9M4eblTENTH_X5OYkzBMpvZA&s" alt="Minecraft" class="game-image rounded-md">
                 </div>
                 <!-- Game 4: Outer Wilds --> 
-                <div class="bg-gray-100 rounded-lg shadow-md p-6">
-                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202208/1623/Zofebh60Ue7Zt5sC10UAtU3D.png" alt="Outer Wilds" class="game-image rounded-md mb-4">
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202208/1623/Zofebh60Ue7Zt5sC10UAtU3D.png" alt="Outer Wilds" class="game-image rounded-md">
                 </div>
                 <!-- Game 5: Tunic --> 
-                <div class="bg-gray-100 rounded-lg shadow-md p-6">
-                    <img src="https://cdn2.unrealengine.com/tunic-epic-shareimage-1920x1080-1920x1080-8bf937a9bd70.jpg" alt="Tunic" class="game-image rounded-md mb-4">
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0301/KSalsBYWb0IuDrdD1SbptAd6.png" alt="Tunic" class="game-image rounded-md">
+                </div>
+                <!-- Game 6: Ori & the Blind forest --> 
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/465980/capsule_616x353.jpg?t=1590717998" alt="Ori & The Blind forest" class="game-image rounded-md">
+                </div>
+                <!-- Game 7: HearthStone --> 
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://www.pedagojeux.fr/wp-content/uploads/2019/11/1280x720_Hearthstone.jpg" alt="HearthStone" class="game-image rounded-md">
+                </div>
+                <!-- Game 8: Magic The Gathering --> 
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://images.ctfassets.net/s5n2t79q9icq/oJ2tDgQwdIjbnFHilUyVQ/5e1cd9fa2af316af49cb6a036d238d0b/en_articles_archive_magic-digital_announcing-mtg-arena-macos-2020-06-22-meta-image.jpeg" alt="Magic The Gathering" class="game-image rounded-md">
+                </div>
+                <!-- Game 8: For The King --> 
+                <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                    <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/fr_CA/games/switch/f/for-the-king-switch/hero" alt="For The King" class="game-image rounded-md">
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
+ 
     
     <!-- Contact Section -->
-    <section id="contact" class="py-10 bg-gray-200">
+    <section id="contact" class="py-10 bg-gray-400">
         <div class="container mx-auto px-4 md:px-6 max-w-lg">
             <h2 class="text-3xl font-bold mb-6">Contact</h2>
             <form action="#" method="POST" class="w-full max-w-lg mx-auto">
@@ -168,6 +193,7 @@
 
     <!-- Include JavaScript -->
     <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
     <script showProject(projectKeys[currentProjectIndex]) ></script>
 
 </body>

@@ -11,13 +11,14 @@
 
     <!-- Header with Navigation -->
     <header class="bg-white shadow fixed w-full z-10 top-0">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-semibold">HOME</a>
-            <nav class="space-x-4">
-                <a href="projects/games.html" class="px-4 py-2 font-bold">PORTFOLIO</a>
-                <a href="economicdoc.html" class="px-4 py-2 cursor-pointer font-semibold">ECONOMICS</a>
-                <a href="index.html#aboutme" class="nav-item px-4 py-2 font-bold">ABOUT ME</a>
-                <a href="index.html#contact" class="px-4 py-2 font-bold">CONTACT</a>
+        <div class="container mx-auto px-6 py-6 flex items-center">
+            <a href="index.html" id="home" class="nav-item text-2xl font-semibold">HOME</a>
+            <nav class="ml-auto flex items-center">
+                <a href="games.html" id="portfolio" class="nav-item px-4 py-2 font-bold">PORTFOLIO</a>
+                <a href="designdoc.html" id="game-design" class="nav-item px-4 py-2 cursor-pointer font-semibold">GAME DESIGN</a>
+                <a href="economicdoc.html" id="economics" class="nav-item px-4 py-2 cursor-pointer font-semibold">ECONOMICS</a>
+                <a href="aboutme.html" id="about-me" class="nav-item px-4 py-2 font-bold">ABOUT ME</a>
+                <a href="index.html#contact" id="contact" class="nav-item px-4 py-2 font-bold">CONTACT</a>
             </nav>
         </div>
     </header>
@@ -31,14 +32,14 @@
                 <!-- Documentation 1 -->
                 <div class="bg-gray-100 rounded-lg shadow-md p-6">
                     <h3 class="text-2xl font-bold mb-2">Domain - Web3 MMORPG</h3>
-                    <img src="images/documentation-1.png" alt="Documentation 1" class="w-full h-48 object-cover rounded-md mb-4">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/404/9d588578954483.Y3JvcCw0NzI2LDM2OTYsMCww.jpg" alt="Documentation 1" class="w-full h-60 object-cover rounded-md mb-4">
                     <p class="text-lg leading-relaxed mb-4">Detailed game design document for Project One, including gameplay mechanics and level design.</p>
                     <a href="https://drive.google.com/file/d/1uInpVozrXEPnWjzcLwN18lvHhxibgyZ9/view?usp=sharing" target="_blank" class="text-teal-500 hover:text-teal-700">View Full Document</a>
                 </div>
                 <!-- Documentation 2 -->
                 <div class="bg-gray-100 rounded-lg shadow-md p-6">
-                    <h3 class="text-2xl font-bold mb-2">Cryptomedia - Clicker blockchain game</h3>
-                    <img src="https://www.notion.so/image/https%3A%2F%2Fc4.wallpaperflare.com%2Fwallpaper%2F820%2F950%2F562%2Fart-battle-fantasy-gods-wallpaper-preview.jpg?table=block&id=355cdb35-0951-4e75-b9d8-21bf8273d8a5&spaceId=d3c27e5b-1b2a-460e-ac1a-94aa8e8dac6f&width=2000&userId=9c93cb34-bb27-4821-9c8c-cc9b5b95844e&cache=v2" alt="Documentation 2" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Cryptomedia - Clicker Web3 game</h3>
+                    <img src="https://images.crazygames.com/click-click-clicker_16x9/20240206102255/click-click-clicker_16x9-cover?auto=format,compress&q=75&cs=strip" alt="Documentation 2" class="w-full h-60 object-cover rounded-md mb-4">
                     <p class="text-lg leading-relaxed mb-4">Game design document for Project Two, outlining the story, characters, and world-building elements.</p>
                     <a href="https://drive.google.com/file/d/1hf7jyFGdJ1ZG3wQl4Ucky5Pn1zU96oWn/view?usp=sharing" target="_blank" class="text-teal-500 hover:text-teal-700">View Full Document</a>
                 </div>
@@ -46,8 +47,9 @@
             </div>
         </div>
     </section>
-    
-</section>
+
+ <!-- Include JavaScript -->
+<script src="js/header.js"></script>
 
 </body>
 </html>
