@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function showPortfolio() {
         // Changer le texte en "Portfolio" et appliquer les animations pour "Portfolio"
-        dynamicText.textContent = "Portfolio";
+        dynamicText.textContent = "Portfolio"; 
         dynamicText.classList.remove("typing-documentation");
         dynamicText.classList.add("typing-portfolio");
     }
