@@ -23,4 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (activeNavItemId) {
         document.getElementById(activeNavItemId).classList.add('active');
     }
+    console.log(document.getElementById(activeNavItemId));
+    
 });
