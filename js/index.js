@@ -47,8 +47,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 500); // Délai pour permettre à "Portfolio" de s'afficher avant de commencer les animations
 });
 
+// Initialize EmailJS
+(function(){
+    emailjs.init("j2V5IfdbeIMwlT5Y9");
+})();
 
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-
-
-
+    emailjs.sendForm('service_David', 'template_david', this)
+        .then(function() {
+            alert('Message sent successfully!');
+        }, function(error) {
+            alert('Failed to send the message. Error: ' + JSON.stringify(error));
+        });
+});

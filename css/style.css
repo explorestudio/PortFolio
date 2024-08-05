@@ -43,6 +43,13 @@ nav {
     z-index: 10; /* Higher than the overlay's z-index */
 }
 
+.nav-item i {
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+.nav-item.active {
+    color: #4FD1C5; /* Example active color */
+}
 
 /* Tailwind adjustements */
 
@@ -398,7 +405,7 @@ nav {
 
 /* Mise en forme des titres et espacement */
 #favorite-games h2 {
-    font-size: 2rem; /* Ajuster la taille du titre */
+    font-size: 4rem; /* Ajuster la taille du titre */
     margin-bottom: 2rem; /* Ajouter une marge en bas */
 }
 

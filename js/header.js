@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'designdoc.html': 'game-design',
         'economicdoc.html': 'economics',
         'aboutme.html': 'about-me',
-        'index.html#contact': 'contact'
+        'index.html#contact': 'contact',
+        'https://www.linkedin.com/in/david-plesel': 'linkedin',
+        'CVK_GameDesigner.pdf': 'cv'
     };
 
     // Determine the active nav item
@@ -24,5 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById(activeNavItemId).classList.add('active');
     }
     console.log(document.getElementById(activeNavItemId));
-    
 });
