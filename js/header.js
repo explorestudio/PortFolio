@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'designdoc.html': 'game-design',
         'economicdoc.html': 'economics',
         'aboutme.html': 'about-me',
-        'index.html#contact': 'contact',
+        '#contact-link': 'contact',
         'https://www.linkedin.com/in/david-plesel': 'linkedin',
         'CVK_GameDesigner.pdf': 'cv'
     };

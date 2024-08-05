@@ -11,7 +11,7 @@ header {
 
 .active {
     color: rgba(29, 78, 216, 1);
-    border-bottom: 2px solid rgb(29, 78, 216);
+    border-bottom: 2px solid rgba(29, 78, 216, 1);
 }
 
 /* Full-page background video */
@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-item.active {
-    color: #4FD1C5; /* Example active color */
+    color: rgba(29, 78, 216, 1); /* Example active color */
 }
 
 /* Tailwind adjustements */
