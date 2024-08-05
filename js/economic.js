@@ -30,12 +30,17 @@ const schemes = {
             <p class = mb-4>This transition from mere consumers to engaged developers drives continuous innovation and keeps the game dynamic, ensuring <span class = font-bold>sustainable growth</span> and <span class = font-bold>long-term engagement</span> as the community contributes to its evolution.</p>   
     `,
         featuredImage: 'https://docs.google.com/presentation/d/e/2PACX-1vQkwYNppEN22Km-bOgisQKzfubprSCm5aef-QVcboTQrYDJTYepAUz-HBz-0V2VRwSDMPhNQ-ahAFJK/embed?start=false&loop=true&delayms=5000',
-    },
-    'scheme-3': {
+    }
+    //,
+    
+    /* 'scheme-3': {
         title: 'Scheme 3',
         description: 'A comprehensive economic plan for Project Three, highlighting the revenue streams and cost structures.',
         featuredImage: 'https://example.com/scheme-3',
     }
+
+    */
+   
     // Add more schemes as needed
 };
 
